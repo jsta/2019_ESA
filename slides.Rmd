@@ -1,0 +1,50 @@
+---
+title: Analysis of 500 lake catchments reveals the relationship between crop type, fertilizer and manure inputs and lake nutrient concentrations
+author: Joe Stachelek, Cayelan C. Carey, Kelly M. Cobourn, Armen R. Kemanian, Tyler Wagner, Kathleen C. Weathers, Weizhe Weng and Patricia A. Soranno
+date: "Ecological Society of America, 2019 August"
+output: binb::presento
+---
+
+## Introduction
+
+Ag land-use is associated with increased nutrient loading to lakes and higher nutrient concentrations.
+
+ [**NLCD vs TP/TN figure**]
+
+## Background
+
+Ag land-use is an aggregated measure that may mask underlying relationships.
+
+[**NLCD vs CDL figure**]
+
+## Research Question(s)
+
+Are more granular measures of Ag activity related to lake water quality across hundreds of lakes and their watersheds?
+
+[**Stream buffer figure**]
+
+## Methods
+
+[**Dotplot figure**]
+
+## Methods
+
+[**Spatial RE figure**]
+
+## Results
+
+[**Model Summary Figure**]
+
+## Results
+
+[**TN Spatial Figure**]
+
+## 
+
+\tikz[overlay,remember picture] \node[opacity=0.8, at=(current page.center)]{%
+  \includegraphics[width=\paperwidth]{images/skeleton}};
+\begin{textblock}{7}(7,2.5)
+  {\color{colorblue}\hugetext{\textbf{RUN!}}}
+\end{textblock}
+
+
