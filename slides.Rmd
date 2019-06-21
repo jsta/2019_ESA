@@ -64,7 +64,7 @@ Coefficient estimates from spatial random effects models are weighted by sample 
 [**Model Summary Figure**]
 
 ## Results
-
+  
   \begin{figure}
     \includegraphics[width=11cm]{images/07_model_selection-1.png}
   \end{figure}
@@ -74,3 +74,4 @@ Coefficient estimates from spatial random effects models are weighted by sample 
 \tikz[overlay,remember picture] \node[opacity=0.8, at=(current page.center)]{%
   \includegraphics[width=\paperwidth]{images/skeleton}};
 
+\tiny
