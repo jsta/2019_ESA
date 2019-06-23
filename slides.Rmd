@@ -38,15 +38,26 @@ Are more granular measures of Ag activity related to lake water quality across h
 
 ## Methods
 
-[**Symbology key of predictor variable categories**]
+\footnotesize
+Lake nutrient concentrations may be affected by:
 
-Measures of Ag activity include:
-
- * Direct measures of nutrient inputs
-
- * Indirect measures of nutrient inputs (proxies)
- 
- * Spatial arrangment of Ag activity (stream buffer composition)
+\begin{itemize}
+\item \begin{tabular}{cc}
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Outfall_25100}} & Direct nutrient inputs
+       \end{tabular}
+\item \begin{tabular}{cc}
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_river_1629939}} & Nutrient transport
+        \end{tabular}
+\item \begin{tabular}{cc}
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_GrainsSilo_649410}} & Proxies of nutrient inputs
+        \end{tabular}
+\item \begin{tabular}{cc}
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Checkerboard_852829}} & Spatial arrangement
+        \end{tabular}
+\item \begin{tabular}{cc}
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Water_37865}} & Lake characteristics
+        \end{tabular}
+\end{itemize}
 
 ____
 
