@@ -9,6 +9,7 @@ output:
 ---
 
 ## Introduction
+\small
 
 Ag land-use is associated with increased nutrient loading to lakes and higher nutrient concentrations.
  
@@ -21,6 +22,7 @@ Ag land-use is associated with increased nutrient loading to lakes and higher nu
  
 
 ## Background
+\small
 
 Ag land-use is an aggregated measure that may mask underlying relationships.
 
@@ -29,16 +31,17 @@ Ag land-use is an aggregated measure that may mask underlying relationships.
   \end{figure}
 
 ## Research Question(s)
+\small
 
 Are more granular measures of Ag activity related to lake water quality across hundreds of lakes and their watersheds?
 
   \begin{figure}
-    \includegraphics[width=9cm]{images/satellite-1.png}
+    \includegraphics[width=9cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
   \end{figure}
 
 ## Methods
-
 \footnotesize
+
 Lake nutrient concentrations may be affected by:
 
 \begin{itemize}
@@ -65,6 +68,7 @@ ____
   \includegraphics[width=0.9\paperwidth]{images/dotplot-1}};
 
 ## Methods
+\small
 
 Spatial random effects models are weighted by sample size.
 
@@ -74,9 +78,10 @@ Spatial random effects models are weighted by sample size.
 
 ## Methods
 
-[**Specific model descriptions**]
+[**Cartoon model descriptions**]
 
 ## Results - TP Model 
+\small
 
 Fixed effect coefficients markedly different among predictor categories.
 
@@ -87,6 +92,7 @@ Spatial random effects cleanly capture additional variation.
   \end{figure}
   
 ## Results - TN Model 
+\small
 
 Fixed effect coefficients similar among predictor categories.
 
@@ -97,23 +103,41 @@ Specific regions have markedly different spatial random effect slopes.
   \end{figure}
   
 ## Results - TN Model
+\small
 
-Lake TN in highlighted regions are more sensitive to Ag cover relative to other regions.
+Lake TN in highlighted regions is more sensitive to Ag relative to other regions.
+\vspace{1em}
 
-Lower TP in the highlighted regions may indicate P limitation.
+\begin{columns}
+\column{2.5in}
+  \includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_hu4-1.png}
+\column{3in}
+  \includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_compare-1.png}
+\end{columns}
   
-  \begin{figure}
-    \includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_hu4-1.png}\includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_compare-1.png}
-  \end{figure}
+## Discussion
+\small
+
+Lake TN in highlighted regions are more sensitive to Ag because:
+\vspace{2em}
+
+They are less often hypereutrophic \tiny[@wagnerLandscapeDriversRegional2011]\small
+<!-- 18 percent vs 12 percent -->
+
+\textbf{or}
+
+TN is not incorporated into biomass due to P limitation \tiny[@filstrupRelationshipChlorophyllPhosphorus2017]\small
+
 
 ## Conclusions
+\small
 
-Lake TP not strongly related to granualar measures of Ag activity. 
+Both lake TP and lake TN are related to granular measures of Ag activity. 
 
-Lake TN strongly related to granular measures of Ag activity such as buffer composition, fertilizer inputs, and corn cover. 
+Lake TP is strongly related to lake depth and stream buffer composition but has little regional spatial patterning.
 
-Lake TN sensitivity to Ag activity may be a function of stoichiometric P limitation.
+Lake TN has marked regional spatial patterning that appear to be related to atmospheric nitrogen deposition and soil clay content.
 
 ## References
 
-\tiny
+\scriptsize
