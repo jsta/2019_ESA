@@ -55,7 +55,7 @@ Lake nutrient concentrations are affected by:
         \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_GrainsSilo_649410}} & Nutrient input proxies
         \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Checkerboard_852829}} & Nutrient input location
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Checkerboard_852829}} & Nutrient input locations
         \end{tabular}
 \item \begin{tabular}{cc}
         \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Water_37865}} & Lake characteristics
