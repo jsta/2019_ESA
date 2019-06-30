@@ -27,7 +27,7 @@ Ag land-use is associated with increased nutrient loading to lakes and higher nu
 Ag land-use is an aggregated measure that may mask underlying relationships.
 
   \begin{figure}
-    \includegraphics[width=7cm]{images/cdl_vs_nlcd-1.png}
+    \includegraphics[width=7cm]{../../JournalSubmissions/lagos_ag/figures/cdl_vs_nlcd-1.png}
   \end{figure}
 
 ## Research Question(s)
@@ -42,20 +42,20 @@ Are more granular measures of Ag activity related to lake water quality across h
 ## Methods
 \footnotesize
 
-Lake nutrient concentrations may be affected by:
+Lake nutrient concentrations are affected by:
 
 \begin{itemize}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Outfall_25100}} & Direct nutrient inputs
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Outfall_25100}} & Nutrient inputs
        \end{tabular}
 \item \begin{tabular}{cc}
         \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_river_1629939}} & Nutrient transport
         \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_GrainsSilo_649410}} & Proxies of nutrient inputs
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_GrainsSilo_649410}} & Nutrient input proxies
         \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Checkerboard_852829}} & Spatial arrangement
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Checkerboard_852829}} & Nutrient input location
         \end{tabular}
 \item \begin{tabular}{cc}
         \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Water_37865}} & Lake characteristics
@@ -65,7 +65,7 @@ Lake nutrient concentrations may be affected by:
 ____
 
 \tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)]{%
-  \includegraphics[width=0.9\paperwidth]{images/dotplot-1}};
+  \includegraphics[width=0.9\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-1}};
 
 ## Methods
 \small
@@ -73,7 +73,7 @@ ____
 Spatial random effects models are weighted by sample size.
 
   \begin{figure}
-    \includegraphics[width=9.5cm]{images/02_hierarchical_demo-1.png}
+    \includegraphics[width=9.5cm]{../../JournalSubmissions/lagos_ag/figures/02_hierarchical_demo-1.png}
   \end{figure}
 
 ## Methods
@@ -88,7 +88,7 @@ Fixed effect coefficients markedly different among predictor categories.
 Spatial random effects cleanly capture additional variation.
 
   \begin{figure}
-    \includegraphics[height=4.0cm]{images/tp_summary-1.png}\hspace{3em}\includegraphics[height=4.0cm]{images/tp_re-1.png}
+    \includegraphics[height=4.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_summary-1.png}\hspace{3em}\includegraphics[height=4.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_re-1.png}
   \end{figure}
   
 ## Results - TN Model 
