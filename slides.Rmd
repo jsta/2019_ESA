@@ -46,19 +46,19 @@ Lake nutrient concentrations are affected by:
 
 \begin{itemize}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Outfall_25100}} & Nutrient inputs
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} & Nutrient inputs
        \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_river_1629939}} & Nutrient transport
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} & Nutrient transport
         \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_GrainsSilo_649410}} & Nutrient input proxies
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} & Nutrient input proxies
         \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Checkerboard_852829}} & Nutrient input locations
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} & Nutrient input locations
         \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/noun_Water_37865}} & Lake characteristics
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} & Lake characteristics
         \end{tabular}
 \end{itemize}
 
