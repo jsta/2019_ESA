@@ -72,7 +72,9 @@ Are more granular measures of Ag activity related to lake water quality across h
 
 ## Methods - Exploratory
 
-Correlation analysis
+[**Map**]
+
+[**Correlation analysis**]
 
 ____
 
@@ -95,6 +97,8 @@ TN ~ \includegraphics[width=0.1\paperwidth]{images/proxy_key} > \includegraphics
 ## Methods - Analytical
 
 [**Cartoon model descriptions**]
+
+Modelling justification from Collins XXXX as well as Filstrup 2018.
 
 ## Methods - Analytical
 \small
@@ -135,9 +139,9 @@ Lake TN in highlighted regions is more sensitive to Ag relative to other regions
 \vspace{1em}
 
 \begin{columns}
-\column{2.5in}
+\column{5.5cm}
   \includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_hu4-1.png}
-\column{3in}
+\column{5.5cm}
   \includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_compare-1.png}
 \end{columns}
   
