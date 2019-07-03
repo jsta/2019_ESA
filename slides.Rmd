@@ -27,24 +27,26 @@ Ag land-use is associated with increased nutrient loading to lakes and higher nu
 Ag land-use is an aggregated measure that may mask underlying relationships.
 
   \begin{figure}
-    \includegraphics[width=7cm]{../../JournalSubmissions/lagos_ag/figures/cdl_vs_nlcd-1.png}
+    \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/cdl_vs_nlcd-1.png}
+  \end{figure}
+
+## Background
+\small
+
+Ag land-use is an aggregated measure that may mask underlying relationships.
+
+  \begin{figure}
+    \includegraphics[width=9cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
   \end{figure}
 
 ## Research Question(s)
 \small
 
 Are more granular measures of Ag activity related to lake water quality across hundreds of lakes and their watersheds?
-
-  \begin{figure}
-    \includegraphics[width=9cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
-  \end{figure}
-
-## Methods
-\footnotesize
-
-Lake nutrient concentrations are affected by:
-
-\begin{itemize}
+\vspace{-1em}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\begin{itemize}[leftmargin=*]
 \item \begin{tabular}{cc}
         \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} & Nutrient inputs
        \end{tabular}
@@ -52,35 +54,59 @@ Lake nutrient concentrations are affected by:
         \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} & Nutrient transport
         \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} & Nutrient input proxies
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} & Nutrient proxies
         \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} & Nutrient input locations
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} & Nutrient locations
         \end{tabular}
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{itemize}[leftmargin=*]
 \item \begin{tabular}{cc}
         \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} & Lake characteristics
         \end{tabular}
 \end{itemize}
+\end{column}
+\end{columns}
+
+## Methods - Exploratory
+
+Correlation analysis
 
 ____
 
 \tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)]{%
   \includegraphics[width=0.9\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-1}};
 
-## Methods
+## Results - Exploratory
 \small
 
-Spatial random effects models are weighted by sample size.
+Phosphorus is more strongly correlated with non-Ag characteristics of lakes and watershed transport.
 
-  \begin{figure}
-    \includegraphics[width=9.5cm]{../../JournalSubmissions/lagos_ag/figures/02_hierarchical_demo-1.png}
-  \end{figure}
+TP ~ \includegraphics[width=0.1\paperwidth]{images/lake_key} > \includegraphics[width=0.1\paperwidth]{images/transport_key} > \includegraphics[width=0.1\paperwidth]{images/proxy_key} > \includegraphics[width=0.1\paperwidth]{images/buffer_key} > \includegraphics[width=0.1\paperwidth]{images/input_key}
 
-## Methods
+\vspace{0.5em}
+
+Nitrogen is more strongly correlated with Ag characteristics such as buffer composition and fertilizer applications.
+
+TN ~ \includegraphics[width=0.1\paperwidth]{images/proxy_key} > \includegraphics[width=0.1\paperwidth]{images/buffer_key} > \includegraphics[width=0.1\paperwidth]{images/input_key} > \includegraphics[width=0.1\paperwidth]{images/lake_key} > \includegraphics[width=0.1\paperwidth]{images/transport_key}
+
+## Methods - Analytical
 
 [**Cartoon model descriptions**]
 
-## Results - TP Model 
+## Methods - Analytical
+\small
+
+Spatial random effects models are weighted by sample size.
+\vspace{1em}
+
+  \begin{figure}
+    \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/02_hierarchical_demo-1.png}
+  \end{figure}
+
+## Results - Analytical - TP Model 
 \small
 
 Fixed effect coefficients markedly different among predictor categories.
@@ -91,7 +117,7 @@ Spatial random effects cleanly capture additional variation.
     \includegraphics[height=4.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_summary-1.png}\hspace{3em}\includegraphics[height=4.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_re-1.png}
   \end{figure}
   
-## Results - TN Model 
+## Results - Analytical - TN Model 
 \small
 
 Fixed effect coefficients similar among predictor categories.
@@ -102,7 +128,7 @@ Specific regions have markedly different spatial random effect slopes.
     \includegraphics[height=4.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_summary-1.png}\hspace{3em}\includegraphics[height=4.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_re-1.png}
   \end{figure}
   
-## Results - TN Model
+## Results - Analytical - TN Model
 \small
 
 Lake TN in highlighted regions is more sensitive to Ag relative to other regions.
