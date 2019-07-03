@@ -103,7 +103,7 @@ Modelling justification from Collins XXXX as well as Filstrup 2018.
 ## Methods - Analytical
 \small
 
-Spatial random effects models are weighted by sample size.
+Spatial random effects estimates are weighted by sample size.
 \vspace{1em}
 
   \begin{figure}
@@ -118,7 +118,7 @@ Fixed effect coefficients markedly different among predictor categories.
 Spatial random effects cleanly capture additional variation.
 
   \begin{figure}
-    \includegraphics[height=4.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_summary-1.png}\hspace{3em}\includegraphics[height=4.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_re-1.png}
+    \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_summary-1.png}\hspace{1em}\includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_re-1.png}
   \end{figure}
   
 ## Results - Analytical - TN Model 
@@ -129,7 +129,7 @@ Fixed effect coefficients similar among predictor categories.
 Specific regions have markedly different spatial random effect slopes.
 
   \begin{figure}
-    \includegraphics[height=4.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_summary-1.png}\hspace{3em}\includegraphics[height=4.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_re-1.png}
+    \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_summary-1.png}\hspace{1em}\includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_re-1.png}
   \end{figure}
   
 ## Results - Analytical - TN Model
