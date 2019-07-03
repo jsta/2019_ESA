@@ -11,7 +11,7 @@ output:
 ## Introduction
 \small
 
-Ag land-use is associated with increased nutrient loading to lakes and higher nutrient concentrations.
+\alert{Ag land-use is associated with} increased nutrient loading to lakes and \alert{higher nutrient concentrations}.
  
   \begin{figure}
     \includegraphics[width=7cm]{images/daniel_2010.png}
@@ -24,7 +24,7 @@ Ag land-use is associated with increased nutrient loading to lakes and higher nu
 ## Background
 \small
 
-Ag land-use is an aggregated measure that may mask underlying relationships.
+\alert{Ag land-use is an aggregated measure} that may mask underlying relationships.
 
   \begin{figure}
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/cdl_vs_nlcd-1.png}
@@ -33,16 +33,16 @@ Ag land-use is an aggregated measure that may mask underlying relationships.
 ## Background
 \small
 
-Ag land-use is an aggregated measure that may mask underlying relationships.
+\alert{Ag land-use is an aggregated measure} that may mask underlying relationships.
 
   \begin{figure}
-    \includegraphics[width=9cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
+    \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
   \end{figure}
 
 ## Research Question(s)
 \small
 
-Are more granular measures of Ag activity related to lake water quality across hundreds of lakes and their watersheds?
+\textbf{Are more granular measures of Ag activity related to lake water quality across hundreds of lakes and their watersheds?}
 \vspace{-1em}
 \begin{columns}
 \begin{column}{0.4\textwidth}
@@ -84,19 +84,23 @@ ____
 ## Results - Exploratory
 \small
 
-Phosphorus is more strongly correlated with non-Ag characteristics of lakes and watershed transport.
+\alert{Phosphorus} is more strongly correlated with non-Ag \alert{characteristics of lakes and watershed transport}.
 
-TP ~ \includegraphics[width=0.1\paperwidth]{images/lake_key} > \includegraphics[width=0.1\paperwidth]{images/transport_key} > \includegraphics[width=0.1\paperwidth]{images/proxy_key} > \includegraphics[width=0.1\paperwidth]{images/buffer_key} > \includegraphics[width=0.1\paperwidth]{images/input_key}
+TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}}
 
 \vspace{0.5em}
 
-Nitrogen is more strongly correlated with Ag characteristics such as buffer composition and fertilizer applications.
+\alert{Nitrogen} is more strongly correlated with Ag characteristics such as \alert{buffer composition and fertilizer applications}.
 
-TN ~ \includegraphics[width=0.1\paperwidth]{images/proxy_key} > \includegraphics[width=0.1\paperwidth]{images/buffer_key} > \includegraphics[width=0.1\paperwidth]{images/input_key} > \includegraphics[width=0.1\paperwidth]{images/lake_key} > \includegraphics[width=0.1\paperwidth]{images/transport_key}
+TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}}
 
 ## Methods - Analytical
 
 [**Cartoon model descriptions**]
+
+Why are proxy variables used for spatial random effects?
+
+Which variables were assigned to each category?
 
 Modelling justification from Collins XXXX as well as Filstrup 2018.
 
@@ -162,7 +166,11 @@ TN is not incorporated into biomass due to P limitation \tiny[@filstrupRelations
 ## Conclusions
 \small
 
-Both lake TP and lake TN are related to granular measures of Ag activity. 
+<!-- Both lake TP and lake TN are related to granular measures of Ag activity.  -->
+
+Lake TP driven by Non-ag and transport variables while TN driven by nutrient sources (cite Collins et al. 2017)
+
+Lake TN models using Corn as a primary landuse variable had higher predictive accuracy than models using row crop cover.
 
 Lake TP is strongly related to lake depth and stream buffer composition but has little regional spatial patterning.
 
