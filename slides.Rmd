@@ -71,10 +71,15 @@ output:
 \end{columns}
 
 ## Methods - Exploratory
+\small
 
-[**Map**]
+\includegraphics[width=0.75\paperwidth]{images/correlation_diagram.png}
 
-[**Correlation analysis**]
+\begin{center}
+Correlation matrix analysis
+\end{center}
+
+<!-- [**Map**] -->
 
 ____
 
@@ -94,30 +99,45 @@ TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_k
 
 TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}}
 
-## Methods - Analytical
+## Methods - Regression Modelling
+\small
 
-[**Cartoon model descriptions**]
+### Assumption 1
 
-Why are proxy variables used for spatial random effects?
+The relationship of most variables to lake nutrients does not depend on location.
 
-Which variables were assigned to each category?
+[**figure**]
 
-Modelling justification from Collins XXXX as well as Filstrup 2018.
+Therefore, \alert{we modelled a global relationship between most variables and lake nutrients}.
+
+<!-- [**Cartoon model descriptions**] -->
+
+<!-- Why are proxy variables used for spatial random effects? -->
+
+<!-- Which variables were assigned to each category? -->
+
+<!-- Modelling justification from Collins XXXX as well as Filstrup 2018. -->
 
 ## Methods - Analytical
 \small
 
-Spatial random effects estimates are weighted by sample size.
-\vspace{1em}
+### Assumption 2
 
-  \begin{figure}
+Ag land use is a proxy many different specific activities which are likely to be regionally variable.
+
+\begin{figure}
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/02_hierarchical_demo-1.png}
   \end{figure}
+
+Therefore, \alert{we modelled the relationship between land use variables and lake nutrients as spatially variable}. 
+
+<!-- Spatial random effects estimates are weighted by sample size. -->
+<!-- \vspace{1em} -->
 
 ## Results - Analytical - TP Model 
 \small
 
-Fixed effect coefficients markedly different among predictor categories.
+Fixed effect coefficients were markedly different among predictor categories.
 
 Spatial random effects cleanly capture additional variation.
 
