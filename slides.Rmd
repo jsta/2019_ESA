@@ -43,9 +43,9 @@ output:
 \small
 
 \textbf{Are more granular measures of Ag activity related to lake water quality across hundreds of lakes and their watersheds?}
-\vspace{-1em}
+<!-- \vspace{-1em} -->
 \begin{columns}
-\begin{column}{0.4\textwidth}
+\begin{column}{0.5\textwidth}
 \begin{itemize}[leftmargin=*]
 \item \begin{tabular}{cc}
         \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} & Nutrient inputs
@@ -56,13 +56,13 @@ output:
 \item \begin{tabular}{cc}
         \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} & Nutrient proxies
         \end{tabular}
-\item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} & Nutrient locations
-        \end{tabular}
 \end{itemize}
 \end{column}
-\begin{column}{0.6\textwidth}
+\begin{column}{0.5\textwidth}
 \begin{itemize}[leftmargin=*]
+\item \begin{tabular}{cc}
+        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} & Buffer composition
+        \end{tabular}
 \item \begin{tabular}{cc}
         \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} & Lake characteristics
         \end{tabular}
@@ -70,13 +70,11 @@ output:
 \end{column}
 \end{columns}
 
-## Methods - Exploratory
+## Methods - Correlation analysis
 \small
 
-\includegraphics[width=0.75\paperwidth]{images/correlation_diagram.png}
-
 \begin{center}
-Correlation matrix analysis
+\includegraphics[width=0.85\paperwidth]{images/correlation_diagram.png}
 \end{center}
 
 <!-- [**Map**] -->
@@ -86,25 +84,25 @@ ____
 \tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)]{%
   \includegraphics[width=0.9\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-1}};
 
-## Results - Exploratory
+## Results - Correlation analysis
 \small
 
-\alert{Phosphorus} is more strongly correlated with non-Ag \alert{characteristics of lakes and watershed transport}.
+\alert{Lake phosphorus concentrations} were most strongly associated with \alert{lake characteristics and measures of watershed nutrient transport}.
 
 TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}}
 
 \vspace{0.5em}
 
-\alert{Nitrogen} is more strongly correlated with Ag characteristics such as \alert{buffer composition and fertilizer applications}.
+\alert{Lake nitrogen concentrations} were most strongly associated with \alert{agricultural land use and the composition of riparian buffers}.
 
 TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}}
 
 ## Methods - Regression Modelling
 \small
 
-### Assumption 1
+<!-- ### Assumption 1 -->
 
-The relationship of most variables to lake nutrients does not depend on location.
+The relationship of most variables to lake nutrients does not depend on location (citations).
 
 [**figure**]
 
@@ -121,9 +119,9 @@ Therefore, \alert{we modelled a global relationship between most variables and l
 ## Methods - Analytical
 \small
 
-### Assumption 2
+<!-- ### Assumption 2 -->
 
-Ag land use is a proxy many different specific activities which are likely to be regionally variable.
+Ag land use is a proxy many different specific activities which are likely to be regionally variable (citations).
 
 \begin{figure}
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/02_hierarchical_demo-1.png}
