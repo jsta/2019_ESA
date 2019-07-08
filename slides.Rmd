@@ -104,13 +104,15 @@ TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_
 ## Methods - Regression Modelling
 \small
 
-Intrepret the relative influence of each "category" of predictors.
+Many of the variables among predictor categories are related.
 
-Choose the single strongest relationship from the correlation analysis.
+Choose the single strongest relationship from the prior correlation analysis to intrepret the relative influence of each _category_ of predictors.
 
 \vspace{1em}
 
 \alert{For TP}, this is Buffer Ag, P fertilizer input, Baseflow, and Max depth.
+
+\vspace{0.5em}
 
 \alert{For TN}, this is Buffer Ag, N fertilizer input, Soil organic carbon, and Max depth.
 
@@ -129,9 +131,9 @@ Choose the single strongest relationship from the correlation analysis.
 ## Methods - Regression Modelling
 \small
 
-Evaluate spatial variation in the relationships between lake nutrients and Ag proxies.
+Ag land use is a proxy for many different specific activities which are likely to be regionally variable. \par \vspace{-1em}\tiny[@burcherLANDCOVERCASCADERELATIONSHIPS2007]\small
 
-Ag land use is a proxy for many different specific activities which are likely to be regionally variable \tiny[@falconeRegionalPatternsAnthropogenic2019]\small.
+Evaluate spatial variation in the relationships between lake nutrients and Ag proxies.
 
 <!-- ### Assumption 2 -->
 
@@ -190,7 +192,7 @@ Lake TN in highlighted regions may more sensitive to Ag because:
 Lakes in these regions are less hypereutrophic \tiny[@wagnerLandscapeDriversRegional2011]\small
 <!-- 18 percent vs 12 percent -->
 
-Lakes in these regions are P limited, excess TN accumulates in the water column \tiny[@filstrupRelationshipChlorophyllPhosphorus2017]\small
+Lakes in these regions are P limiteds so excess TN accumulates in the water column \tiny[@filstrupRelationshipChlorophyllPhosphorus2017]\small
 
 
 ## Conclusions
@@ -204,7 +206,7 @@ Lake TP is well described by a global model not accounting for inter-regional va
 
 \vspace{1em}
 
-Lake TN models were particularly improved by more granular Ag information (Corn cover, riparian buffer composition). 
+Lake TN models were notable improved by using more granular Ag information (Corn cover, riparian buffer composition). 
 <!-- The Lake TN models using Corn as a primary landuse variable had higher predictive accuracy than models using row crop cover. -->
 
 <!-- \tiny \small (cite Collins et al. 2017) -->
@@ -215,4 +217,4 @@ Regional differences may be related to lake TP, atmospheric nitrogen deposition,
 
 ## References
 
-\scriptsize
+\tiny
