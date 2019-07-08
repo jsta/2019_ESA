@@ -152,6 +152,8 @@ Therefore, \alert{we modelled the relationship between land use variables and la
 \small
 
 Fixed effect coefficients were markedly different among predictor categories.
+<!-- # Note how different in magnitude baseflow and max depth are from the others. 
+A one sd change in either will have a large effect on the fitted value -->
 
 Spatial random effects cleanly capture additional variation.
 
@@ -186,13 +188,19 @@ Lake TN in highlighted regions is more sensitive to Ag relative to other regions
 ## Discussion
 \small
 
-Lake TN in highlighted regions may more sensitive to Ag because:
+Lake TN in highlighted regions may be more sensitive to Ag because:
 \vspace{2em}
 
-Lakes in these regions are less hypereutrophic \tiny[@wagnerLandscapeDriversRegional2011]\small
-<!-- 18 percent vs 12 percent -->
+Fields in these regions are more directly drained to make up for having wetland soils.
 
-Lakes in these regions are P limiteds so excess TN accumulates in the water column \tiny[@filstrupRelationshipChlorophyllPhosphorus2017]\small
+Lakes in these regions are P limited so excess TN accumulates in the water column \tiny[@filstrupRelationshipChlorophyllPhosphorus2017]\small
+
+Lakes in these regions are less hypereutrophic \tiny[@wagnerLandscapeDriversRegional2011]\small
+<!-- 18 percent vs 12 percent (jsta calculated) -->
+<!-- TN not lower in these regions but still ... -->
+
+Lakes in these regions are affected by an interaction among multiple land use types.
+
 
 
 ## Conclusions
