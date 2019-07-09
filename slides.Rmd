@@ -15,14 +15,14 @@ output:
 \vspace{1em}
 \begin{columns}[T]
 \begin{column}{0.3\textwidth}
-\includegraphics[width=3.3cm]{images/crops.png}
+\includegraphics[width=3.1cm]{images/crops.png}
 \end{column}
 \begin{column}{0.7\textwidth}
 \includegraphics[width=7cm]{images/daniel_2010.png}
 \end{column}
 \end{columns}
 \tiny
-[@danielInfluencesSpatialScale2010]
+\hspace{5em}[@danielInfluencesSpatialScale2010]
 
 ## Background
 \small
@@ -45,7 +45,16 @@ output:
 ## Research Question(s)
 \small
 
-\textbf{Are more granular measures of Ag activity related to lake water quality across hundreds of lakes and their watersheds?}
+\textbf{Are more granular measures of Ag activity related to lake water quality (TN, TP) across hundreds of lakes and their watersheds?}
+
+\vspace{1em}
+
+\begin{figure}
+\includegraphics[width=9cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}
+\end{figure}
+
+## Methods - Conceptual Model
+\small
 
 \begin{columns}
 \begin{column}{0.5\textwidth}
@@ -75,21 +84,21 @@ output:
 
 \tiny [@collinsLakeNutrientStoichiometry2017]
 
-## Methods - Data
-\vspace{-3.5em}
-\begin{figure}
-\includegraphics[width=7cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}
-\end{figure}
-\textblockcolour{colorlgray}
-\begin{textblock}{12}(1,6)
-\small
-Inputs \hspace{17pt} - Fertilizer and manure applications\\Land use \hspace{2pt} - Ag, Pasture, Row crop, Corn, Soybeans, \\ \hspace{62pt} N-fixers, Small grains\\Transport \hspace{0pt} - Baseflow, Soil characteristics, Precipitation\\Buffers \hspace{13pt} - See \emph{Land use}\\Lake \hspace{26pt} - Max depth, Area, etc.
-\end{textblock}
+<!-- ## Methods - Data -->
+<!-- \vspace{-3.5em} -->
+<!-- \begin{figure} -->
+<!-- \includegraphics[width=7cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png} -->
+<!-- \end{figure} -->
+<!-- \textblockcolour{colorlgray} -->
+<!-- \begin{textblock}{12}(1,6) -->
+<!-- \small -->
+<!-- Inputs \hspace{17pt} - Fertilizer and manure applications\\Land use \hspace{2pt} - Ag, Pasture, Row crop, Corn, Soybeans, \\ \hspace{62pt} N-fixers, Small grains\\Transport \hspace{0pt} - Baseflow, Soil characteristics, Precipitation\\Buffers \hspace{13pt} - See \emph{Land use}\\Lake \hspace{26pt} - Max depth, Area, etc. -->
+<!-- \end{textblock} -->
 
 ## Methods - Correlation analysis
 \small
 
-Exploratory analysis to determine how lake nutrients are related to predictors from each category.
+Correlation analysis to determine how lake nutrients are related to predictors from each category.
 
 \begin{center}
 \includegraphics[width=0.85\paperwidth]{images/correlation_diagram.png}
@@ -103,22 +112,24 @@ ____
 ## Results - Correlation analysis
 \small
 
-\alert{Lake phosphorus concentrations} were most strongly associated with \alert{lake characteristics and measures of watershed nutrient transport}.
+\alert{Lake phosphorus concentrations} are most strongly associated with \alert{lake characteristics and measures of watershed nutrient transport}.
 
 TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}}
 
 \vspace{0.5em}
 
-\alert{Lake nitrogen concentrations} were most strongly associated with \alert{agricultural land use and the composition of riparian buffers}.
+\alert{Lake nitrogen concentrations} are most strongly associated with \alert{agricultural land use and the composition of riparian buffers}.
 
 TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}}
 
 ## Methods - Regression Modelling
 \small
 
-Many of the variables among predictor categories are related.
+<!-- Many of the variables within predictor categories are related. -->
 
-Choose the single strongest relationship from the prior correlation analysis to intrepret the relative influence of each _category_ of predictors.
+Choose fixed effect variables based on the single strongest relationship from the prior correlation analysis.
+
+<!-- to intrepret the relative influence of each _category_ of predictors. -->
 
 \vspace{1em}
 
@@ -143,9 +154,11 @@ Choose the single strongest relationship from the prior correlation analysis to 
 ## Methods - Regression Modelling
 \small
 
+Choose random effect variable(s) that we expect to vary regionally.
+
 Ag land use is a proxy for many different specific activities which are likely to be regionally variable. \par \vspace{-1em}\tiny[@burcherLANDCOVERCASCADERELATIONSHIPS2007]\small
 
-Evaluate spatial variation in the relationships between lake nutrients and Ag proxies.
+<!-- Evaluate spatial variation in the relationships between lake nutrients and Ag proxies. -->
 
 <!-- ### Assumption 2 -->
 
