@@ -12,14 +12,17 @@ output:
 \small
 
 \alert{Ag land-use is associated with} increased nutrient loading to lakes and \alert{higher nutrient concentrations}.
- 
-  \begin{figure}
-    \includegraphics[width=7cm]{images/daniel_2010.png}
-  \end{figure}
- 
- \tiny
- [@danielInfluencesSpatialScale2010]
- 
+\vspace{1em}
+\begin{columns}[T]
+\begin{column}{0.3\textwidth}
+\includegraphics[width=3.3cm]{images/crops.png}
+\end{column}
+\begin{column}{0.7\textwidth}
+\includegraphics[width=7cm]{images/daniel_2010.png}
+\end{column}
+\end{columns}
+\tiny
+[@danielInfluencesSpatialScale2010]
 
 ## Background
 \small
@@ -71,6 +74,13 @@ output:
 \end{columns}
 
 \tiny [@collinsLakeNutrientStoichiometry2017]
+
+## Methods - Data
+\small
+
+[**Map**]
+
+[**What are some data we collected?**]
 
 ## Methods - Correlation analysis
 \small
@@ -214,7 +224,7 @@ Lake TP is well described by a global model not accounting for inter-regional va
 
 \vspace{1em}
 
-Lake TN models were notable improved by using more granular Ag information (Corn cover, riparian buffer composition). 
+Lake TN models were notably improved by using more granular Ag information (Corn cover, riparian buffer composition). 
 <!-- The Lake TN models using Corn as a primary landuse variable had higher predictive accuracy than models using row crop cover. -->
 
 <!-- \tiny \small (cite Collins et al. 2017) -->
