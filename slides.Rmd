@@ -46,7 +46,7 @@ output:
 \small
 
 \textbf{Are more granular measures of Ag activity related to lake water quality across hundreds of lakes and their watersheds?}
-<!-- \vspace{-1em} -->
+
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \begin{itemize}[leftmargin=*]
@@ -76,11 +76,16 @@ output:
 \tiny [@collinsLakeNutrientStoichiometry2017]
 
 ## Methods - Data
+\vspace{-2.5em}
+\begin{figure}
+\includegraphics[width=8.3cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}
+\end{figure}
+
+\textblockcolour{white}
+\begin{textblock}{12}(1,5.9)
 \small
-
-[**Map**]
-
-[**What are some data we collected?**]
+Inputs \hspace{16pt} - Fertilizer and manure applications\\Land use \hspace{1pt} - Ag, Pasture, Row crop, Corn, Soybeans, \\ \hspace{62pt} N-fixers, Small grains\\Transport - Baseflow, Soil characteristics, Precipitation\\Buffers \hspace{11pt} - See \emph{Land use}\\Lake Characteristics - Max depth, Area, etc.
+\end{textblock}
 
 ## Methods - Correlation analysis
 \small
@@ -90,8 +95,6 @@ Exploratory analysis to determine how lake nutrients are related to predictors f
 \begin{center}
 \includegraphics[width=0.85\paperwidth]{images/correlation_diagram.png}
 \end{center}
-
-<!-- [**Map**] -->
 
 ____
 
