@@ -201,7 +201,7 @@ Specific regions have markedly different spatial random effect slopes.
 \small
 
 Lake TN in highlighted regions is more sensitive to Ag relative to other regions.
-\vspace{1em}
+\vspace{2em}
 
 \begin{columns}
 \column{5.5cm}
