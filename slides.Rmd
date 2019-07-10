@@ -56,28 +56,31 @@ output:
 ## Methods - Conceptual Model
 \small
 
+\vspace{-2em}
+
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \begin{itemize}[leftmargin=*]
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} & Nutrient inputs
+        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/input_key}} & Nutrient inputs - Fertilizer and manure applications
        \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} & Nutrient transport
+        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/transport_key}} & Nutrient transport - Baseflow, soils, precipitation
         \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} & Nutrient proxies
+        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/proxy_key}} & Nutrient proxies - Land use, specific, crops, etc.
         \end{tabular}
+\item \begin{tabular}{cc}
+\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer composition - \emph{Land use}
+\end{tabular}
+\item \begin{tabular}{cc}
+\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/lake_key}} & Lake characteristics - Depth, area, etc.
+\end{tabular}
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}[leftmargin=*]
-\item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} & Buffer composition
-        \end{tabular}
-\item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} & Lake characteristics
-        \end{tabular}
+\item
 \end{itemize}
 \end{column}
 \end{columns}
@@ -156,7 +159,7 @@ Choose fixed effect variables based on the single strongest relationship from th
 
 Choose random effect variable(s) that we expect to vary regionally.
 
-Ag land use is a proxy for many different specific activities which are likely to be regionally variable. \par \vspace{-1em}\tiny[@burcherLANDCOVERCASCADERELATIONSHIPS2007]\small
+\alert{Ag land use is a proxy} for many different specific activities which are likely to be regionally variable. \par \vspace{-1em}\tiny[@burcherLANDCOVERCASCADERELATIONSHIPS2007]\small
 
 <!-- Evaluate spatial variation in the relationships between lake nutrients and Ag proxies. -->
 
