@@ -18,11 +18,9 @@ output:
 \includegraphics[width=3.1cm]{images/crops.png}
 \end{column}
 \begin{column}{0.7\textwidth}
-\includegraphics[width=7cm]{images/daniel_2010.png}
+\includegraphics[width=6cm]{images/tn_vs_ag.png}
 \end{column}
 \end{columns}
-\tiny
-\hspace{5em}[@danielInfluencesSpatialScale2010]
 
 ## Background
 \small
