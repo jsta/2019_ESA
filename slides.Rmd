@@ -51,7 +51,7 @@ output:
 \includegraphics[width=9cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}
 \end{figure}
 
-## Methods - Conceptual Model
+## Methods - Types of granualar Ag data
 \small
 
 \vspace{-2em}
@@ -122,6 +122,10 @@ TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_k
 \alert{Lake nitrogen concentrations} are most strongly associated with \alert{agricultural land use and the composition of riparian buffers}.
 
 TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}}
+
+## Methods
+
+[**I'm building a model...**]
 
 ## Methods - Regression Modelling
 \small
