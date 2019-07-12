@@ -14,11 +14,11 @@ output:
 \alert{Ag land-use is associated with} increased nutrient loading to lakes and \alert{higher nutrient concentrations}.
 \vspace{1em}
 \begin{columns}[T]
-\begin{column}{0.3\textwidth}
-\includegraphics[width=3.1cm]{images/crops.png}
+\begin{column}{0.35\textwidth}
+\includegraphics[width=4cm]{images/crops.png}
 \end{column}
-\begin{column}{0.7\textwidth}
-\includegraphics[width=6cm]{images/tn_vs_ag.png}
+\begin{column}{0.65\textwidth}
+\includegraphics[width=6.5cm]{images/tn_vs_ag.png}
 \end{column}
 \end{columns}
 

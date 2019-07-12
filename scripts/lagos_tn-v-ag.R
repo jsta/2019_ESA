@@ -25,4 +25,5 @@ gg_out <- ggplot(data = dt) +
         panel.background = element_rect(fill = "transparent")) +
   xlab("Ag land use (%)") + ylab("Total Nitrogen")
 
-ggsave("images/tn_vs_ag.png", gg_out, bg = "transparent")
+ggsave("images/tn_vs_ag.png", gg_out, bg = "transparent",
+       width = 3.5, height = 3)
