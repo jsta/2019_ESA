@@ -33,6 +33,21 @@ output:
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
   \end{figure}
 
+## Background
+\small
+
+<!-- Matrix contrast between detailed Ag and scale -->
+<!--  2 x 2 -->
+<!--  2 x 2 -->
+<!-- Macroscale vs fine scale -->
+<!-- Granular Ag vs detailed Ag -->
+\begin{figure}
+    \includegraphics[width=8cm]{images/granularity.png}
+  \end{figure}
+
+What are some things we’ve learned from fine scale, granular-data studies?
+What are some things we’ve learned from macroscale, aggregated-data studies?
+
 ## Research Question(s)
 \small
 
@@ -44,11 +59,11 @@ output:
 
 <!-- [**Pictures?**] -->
 
-## Methods - 500 lake catchments
+## Methods - 500 high Ag lake catchments
 \small
 
 \begin{figure}
-\includegraphics[width=7cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}\hspace{1em}\includegraphics[width=7cm]{../../JournalSubmissions/lagos_ag/figures/trophic_state-1.png}
+\includegraphics[width=6cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}\hspace{1em}\includegraphics[width=4cm]{../../JournalSubmissions/lagos_ag/figures/trophic_state-1.png}
 \end{figure}
 
 Lakes have high Ag land use (> 40%)
@@ -123,18 +138,18 @@ ____
 \tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)]{%
   \includegraphics[width=0.9\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-1}};
 
-## Results - Correlation analysis
-\small
+<!-- ## Results - Correlation analysis -->
+<!-- \small -->
 
-\alert{Lake phosphorus concentrations} are most strongly associated with \alert{lake characteristics and measures of watershed nutrient transport}.
+<!-- \alert{Lake phosphorus concentrations} are most strongly associated with \alert{lake characteristics and measures of watershed nutrient transport}. -->
 
-TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}}
+<!-- TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} -->
 
-\vspace{0.5em}
+<!-- \vspace{0.5em} -->
 
-\alert{Lake nitrogen concentrations} are most strongly associated with \alert{agricultural land use and the composition of riparian buffers}.
+<!-- \alert{Lake nitrogen concentrations} are most strongly associated with \alert{agricultural land use and the composition of riparian buffers}. -->
 
-TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}}
+<!-- TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} -->
 
 ## Methods
 
