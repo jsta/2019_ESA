@@ -43,15 +43,22 @@ output:
 ## Research Question(s)
 \small
 
-\textbf{Are more granular measures of Ag activity related to lake water quality (TN, TP) across hundreds of lakes and their watersheds?}
+\textbf{1. Are more granular measures of Ag activity related to lake water quality (TN, TP) across hundreds of lakes and their watersheds?}
+
+\textbf{2. Do relationships vary spatially among hydrologic and climatic regions?}
 
 \vspace{1em}
+
+[**Pictures**]
+
+## Methods - 500 lake catchments
+\small
 
 \begin{figure}
 \includegraphics[width=9cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}
 \end{figure}
 
-## Methods - Types of granualar Ag data
+## Methods - Granular Ag data
 \small
 
 \vspace{-2em}
