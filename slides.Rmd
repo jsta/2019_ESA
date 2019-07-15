@@ -48,8 +48,11 @@ output:
 \small
 
 \begin{figure}
-\includegraphics[width=9cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}
+\includegraphics[width=7cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}\hspace{1em}\includegraphics[width=7cm]{../../JournalSubmissions/lagos_ag/figures/trophic_state-1.png}
 \end{figure}
+
+Lakes have high Ag land use (> 40%)
+
 
 ## Methods - Granular Ag data
 \small
@@ -90,11 +93,13 @@ output:
 
 \alert{Build a multivariate model to explain nutrients in lakes} that is:
 
+\vspace{1em}
+
 \textbf{1. Tractible - Limited number of predictors, avoids multicolinearity}
 
-\{2. Informative - Allows for interpretation of variable importance\}
+2\. Informative - Allows for interpretation of variable importance
 
-\{3. Reliable - Provides an estimate of parameter uncertainity\}
+3\. Reliable - Provides an estimate of parameter uncertainity
 
 <!-- ## Methods - Data -->
 <!-- \vspace{-3.5em} -->
