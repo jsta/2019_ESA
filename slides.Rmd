@@ -12,15 +12,8 @@ output:
 \small
 
 \alert{Ag land-use is associated with} increased nutrient loading to lakes and \alert{higher nutrient concentrations}.
-\vspace{1em}
-\begin{columns}[T]
-\begin{column}{0.35\textwidth}
-\includegraphics[width=4cm]{images/crops.png}
-\end{column}
-\begin{column}{0.65\textwidth}
-\includegraphics[width=6.5cm]{images/tn_vs_ag.png}
-\end{column}
-\end{columns}
+
+\centerline{\includegraphics[width=12cm]{images/tn_vs_ag.png}}\hspace*{8cm}
 
 ## Background
 \small
@@ -34,7 +27,7 @@ output:
 ## Background
 \small
 
-\alert{Ag land-use is an aggregated measure} that may mask underlying relationships.
+\alert{Watershed land-use summaries are spatially coarse measures} that may mask underlying relationships.
 
   \begin{figure}
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
@@ -45,11 +38,11 @@ output:
 
 \textbf{1. Are more granular measures of Ag activity related to lake water quality (TN, TP) across hundreds of lakes and their watersheds?}
 
-\textbf{2. Do relationships vary spatially among hydrologic and climatic regions?}
-
 \vspace{1em}
 
-[**Pictures**]
+\textbf{2. Do relationships between Ag activities and lake water quality vary spatially among hydrologic and climatic regions?}
+
+<!-- [**Pictures?**] -->
 
 ## Methods - 500 lake catchments
 \small
@@ -92,6 +85,17 @@ output:
 
 \tiny [@collinsLakeNutrientStoichiometry2017]
 
+## Methods - Statistical modelling
+\small
+
+\alert{Build a multivariate model to explain nutrients in lakes} that is:
+
+\textbf{1. Tractible - Limited number of predictors, avoids multicolinearity}
+
+\{2. Informative - Allows for interpretation of variable importance\}
+
+\{3. Reliable - Provides an estimate of parameter uncertainity\}
+
 <!-- ## Methods - Data -->
 <!-- \vspace{-3.5em} -->
 <!-- \begin{figure} -->
@@ -103,14 +107,11 @@ output:
 <!-- Inputs \hspace{17pt} - Fertilizer and manure applications\\Land use \hspace{2pt} - Ag, Pasture, Row crop, Corn, Soybeans, \\ \hspace{62pt} N-fixers, Small grains\\Transport \hspace{0pt} - Baseflow, Soil characteristics, Precipitation\\Buffers \hspace{13pt} - See \emph{Land use}\\Lake \hspace{26pt} - Max depth, Area, etc. -->
 <!-- \end{textblock} -->
 
-## Methods - Correlation analysis
-\small
+<!-- Correlation analysis to determine how lake nutrients are related to predictors from each category. -->
 
-Correlation analysis to determine how lake nutrients are related to predictors from each category.
-
-\begin{center}
-\includegraphics[width=0.85\paperwidth]{images/correlation_diagram.png}
-\end{center}
+<!-- \begin{center} -->
+<!-- \includegraphics[width=0.85\paperwidth]{images/correlation_diagram.png} -->
+<!-- \end{center} -->
 
 ____
 
