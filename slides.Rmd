@@ -13,6 +13,8 @@ output:
 
 \alert{Ag land-use is associated with} increased nutrient loading to lakes and \alert{higher nutrient concentrations}.
 
+\vspace{1em}
+
 \centerline{\includegraphics[width=11cm]{images/tn_vs_ag.png}}\hspace*{8cm}
 
 ## Background
@@ -33,7 +35,8 @@ output:
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
   \end{figure}
 
-## Background
+____
+
 \small
 
 <!-- Matrix contrast between detailed Ag and scale -->
@@ -69,8 +72,9 @@ What are some things we’ve learned from macroscale, aggregated-data studies?
 \includegraphics[width=6cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}\hspace{1em}\includegraphics[width=4cm]{../../JournalSubmissions/lagos_ag/figures/trophic_state-1.png}
 \end{figure}
 
-Lakes have high Ag land use (> 40%)
+Our study lakes have high Ag land use (> 40%).
 
+Our study lakes are more often eutrophic relative to lakes in general.
 
 ## Methods - Granular Ag data
 \small
