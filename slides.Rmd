@@ -13,7 +13,7 @@ output:
 
 \alert{Ag land-use is associated with} increased nutrient loading to lakes and \alert{higher nutrient concentrations}.
 
-\centerline{\includegraphics[width=12cm]{images/tn_vs_ag.png}}\hspace*{8cm}
+\centerline{\includegraphics[width=11cm]{images/tn_vs_ag.png}}\hspace*{8cm}
 
 ## Background
 \small
@@ -41,11 +41,14 @@ output:
 <!--  2 x 2 -->
 <!-- Macroscale vs fine scale -->
 <!-- Granular Ag vs detailed Ag -->
+\vspace{-1em}
+
 \begin{figure}
-    \includegraphics[width=8cm]{images/granularity.png}
+    \includegraphics[width=11cm]{images/granularity.png}
   \end{figure}
 
 What are some things we’ve learned from fine scale, granular-data studies?
+
 What are some things we’ve learned from macroscale, aggregated-data studies?
 
 ## Research Question(s)
@@ -59,7 +62,7 @@ What are some things we’ve learned from macroscale, aggregated-data studies?
 
 <!-- [**Pictures?**] -->
 
-## Methods - 500 high Ag lake catchments
+## Methods - 500 lake catchments
 \small
 
 \begin{figure}
@@ -84,10 +87,10 @@ Lakes have high Ag land use (> 40%)
         \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/transport_key}} & Nutrient transport - Baseflow, soils, precipitation
         \end{tabular}
 \item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/proxy_key}} & Nutrient proxies - Land use, specific, crops, etc.
+        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/proxy_key}} & Land-use cover - Specific crops, etc.
         \end{tabular}
 \item \begin{tabular}{cc}
-\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer composition - \emph{Land use}
+\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer composition - \emph{Land-use cover}
 \end{tabular}
 \item \begin{tabular}{cc}
 \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/lake_key}} & Lake characteristics - Depth, area, etc.
@@ -103,6 +106,11 @@ Lakes have high Ag land use (> 40%)
 
 \tiny [@collinsLakeNutrientStoichiometry2017]
 
+____
+
+\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)]{%
+  \includegraphics[width=0.9\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-1}};
+
 ## Methods - Statistical modelling
 \small
 
@@ -110,67 +118,34 @@ Lakes have high Ag land use (> 40%)
 
 \vspace{1em}
 
-\textbf{1. Tractible - Limited number of predictors, avoids multicolinearity}
+\textbf{1. Tractable - Limited number of predictors, avoids multicolinearity}
 
-2\. Informative - Allows for interpretation of variable importance
+2\. Reliable - Provides an estimate of parameter uncertainity
 
-3\. Reliable - Provides an estimate of parameter uncertainity
+3\. Informative - Allows for interpretation of variable importance
 
-<!-- ## Methods - Data -->
-<!-- \vspace{-3.5em} -->
-<!-- \begin{figure} -->
-<!-- \includegraphics[width=7cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png} -->
-<!-- \end{figure} -->
-<!-- \textblockcolour{colorlgray} -->
-<!-- \begin{textblock}{12}(1,6) -->
-<!-- \small -->
-<!-- Inputs \hspace{17pt} - Fertilizer and manure applications\\Land use \hspace{2pt} - Ag, Pasture, Row crop, Corn, Soybeans, \\ \hspace{62pt} N-fixers, Small grains\\Transport \hspace{0pt} - Baseflow, Soil characteristics, Precipitation\\Buffers \hspace{13pt} - See \emph{Land use}\\Lake \hspace{26pt} - Max depth, Area, etc. -->
-<!-- \end{textblock} -->
-
-<!-- Correlation analysis to determine how lake nutrients are related to predictors from each category. -->
-
-<!-- \begin{center} -->
-<!-- \includegraphics[width=0.85\paperwidth]{images/correlation_diagram.png} -->
-<!-- \end{center} -->
-
-____
-
-\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)]{%
-  \includegraphics[width=0.9\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-1}};
-
-<!-- ## Results - Correlation analysis -->
-<!-- \small -->
-
-<!-- \alert{Lake phosphorus concentrations} are most strongly associated with \alert{lake characteristics and measures of watershed nutrient transport}. -->
-
-<!-- TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} -->
-
-<!-- \vspace{0.5em} -->
-
-<!-- \alert{Lake nitrogen concentrations} are most strongly associated with \alert{agricultural land use and the composition of riparian buffers}. -->
-
-<!-- TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} -->
-
-## Methods
-
-[**I'm building a model...**]
-
-## Methods - Regression Modelling
+## Methods - Mixed modelling
 \small
+
+\textbf{One variable from each predictor category was treated as a global (fixed) effect}
+
+\alert{For TP}, this was Buffer Ag, P fertilizer input, Baseflow, and Max depth.
+
+\alert{For TN}, this was Buffer Ag, N fertilizer input, Soil organic carbon, and Max depth.
+
+\textbf{Watershed land-use cover was treated as a spatially varying (random) effect}
+
+\alert{For TN, TP}, this was one of Ag, Pasture, Corn, Soybeans, etc.
 
 <!-- Many of the variables within predictor categories are related. -->
 
-Choose fixed effect variables based on the single strongest relationship from the prior correlation analysis.
+<!-- Choose fixed effect variables based on the single strongest relationship from the prior correlation analysis. -->
 
 <!-- to intrepret the relative influence of each _category_ of predictors. -->
 
 \vspace{1em}
 
-\alert{For TP}, this is Buffer Ag, P fertilizer input, Baseflow, and Max depth.
 
-\vspace{0.5em}
-
-\alert{For TN}, this is Buffer Ag, N fertilizer input, Soil organic carbon, and Max depth.
 
 <!-- [**figure**] -->
 
@@ -187,9 +162,9 @@ Choose fixed effect variables based on the single strongest relationship from th
 ## Methods - Regression Modelling
 \small
 
-Choose random effect variable(s) that we expect to vary regionally.
+<!-- Choose random effect variable(s) that we expect to vary regionally. -->
 
-\alert{Ag land use is a proxy} for many different specific activities which are likely to be regionally variable. \par \vspace{-1em}\tiny[@burcherLANDCOVERCASCADERELATIONSHIPS2007]\small
+\alert{Watershed land use is a proxy} for many different specific activities which are likely to be regionally variable. \par \vspace{-1em}\tiny[@burcherLANDCOVERCASCADERELATIONSHIPS2007]\small
 
 <!-- Evaluate spatial variation in the relationships between lake nutrients and Ag proxies. -->
 
@@ -201,10 +176,36 @@ Choose random effect variable(s) that we expect to vary regionally.
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/02_hierarchical_demo-1.png}
   \end{figure}
 
-Therefore, \alert{we modelled the relationship between land use variables and lake nutrients as spatially variable}. 
+<!-- Therefore, \alert{we modelled the relationship between land use variables and lake nutrients as spatially variable}.  -->
 
 <!-- Spatial random effects estimates are weighted by sample size. -->
 <!-- \vspace{1em} -->
+
+## Methods - Statistical modelling
+\small
+
+\alert{Build a multivariate model to explain nutrients in lakes} that is:
+
+\vspace{1em}
+
+1\. Tractable - Limited number of predictors, avoids multicolinearity
+
+\textbf{2. Reliable - Provides an estimate of parameter uncertainity}
+
+3\. Informative - Allows for interpretation of variable importance
+
+## Methods - Statistical modelling
+\small
+
+\alert{Build a multivariate model to explain nutrients in lakes} that is:
+
+\vspace{1em}
+
+1\. Tractable - Limited number of predictors, avoids multicolinearity
+
+2\. Reliable - Provides an estimate of parameter uncertainity
+
+\textbf{3. Informative - Allows for interpretation of variable importance}
 
 ## Results - TP Model 
 \small
@@ -233,7 +234,7 @@ Specific regions have markedly different spatial random effect slopes.
 ## Results - TN Model
 \small
 
-Lake TN in highlighted regions is more sensitive to Ag relative to other regions.
+Lake TN in highlighted regions were more sensitive to Ag relative to other regions.
 \vspace{2em}
 
 \begin{columns}
@@ -264,22 +265,55 @@ Lakes in these regions are affected by an interaction among multiple land use ty
 ## Conclusions
 \small
 
-<!-- Both lake TP and lake TN are related to granular measures of Ag activity.  -->
+\textbf{1. Are more granular measures of Ag activity related to lake water quality (TN, TP) across hundreds of lakes and their watersheds?}
 
-Lake TP was most strongly related to Non-ag and transport variables like lake depth and baseflow. 
+> Both lake TP and lake TN were related to granular measures of Ag activity.
 
-Lake TP is well described by a global model not accounting for inter-regional variation in predictor relationships.
+> Lake TN concentration was strongly related to watershed corn cover and riparian buffer composition.
 
-\vspace{1em}
+\vspace{-0.5em}
 
-Lake TN models were notably improved by using more granular Ag information (Corn cover, riparian buffer composition). 
+\textbf{2. Do relationships between Ag activities and lake water quality vary spatially among hydrologic and climatic regions?}
+
+> The relationship between lake TN and land-use cover was spatially variable. 
+
+<!-- This variability may be related to differences in lake TP, atmospheric nitrogen deposition, or soil clay content. -->
+
+<!-- Lake TP was most strongly related to Non-ag and transport variables like lake depth and baseflow.  -->
+
+<!-- Lake TP is well described by a global model not accounting for inter-regional variation in predictor relationships. -->
+
 <!-- The Lake TN models using Corn as a primary landuse variable had higher predictive accuracy than models using row crop cover. -->
 
 <!-- \tiny \small (cite Collins et al. 2017) -->
 
-Lake TN is well described by a hierarchical model where relationships with land use are allowed to vary among regions. 
+## Methods - Data
+\small
 
-Regional differences may be related to lake TP, atmospheric nitrogen deposition, or soil clay content.
+\textblockcolour{colorlgray}
+\begin{textblock}{12}(1,6)
+\small
+Inputs \hspace{17pt} - Fertilizer and manure applications\\Land use \hspace{2pt} - Ag, Pasture, Row crop, Corn, Soybeans, \\ \hspace{62pt} N-fixers, Small grains\\Transport \hspace{0pt} - Baseflow, Soil characteristics, Precipitation\\Buffers \hspace{13pt} - See \emph{Land use}\\Lake \hspace{26pt} - Max depth, Area, etc.
+\end{textblock}
+
+Correlation analysis to determine how lake nutrients are related to predictors from each category.
+
+\begin{center}
+\includegraphics[width=0.85\paperwidth]{images/correlation_diagram.png}
+\end{center}
+
+## Results - Correlation analysis
+\small
+
+\alert{Lake phosphorus concentrations} are most strongly associated with \alert{lake characteristics and measures of watershed nutrient transport}.
+
+TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}}
+
+\vspace{0.5em}
+
+\alert{Lake nitrogen concentrations} are most strongly associated with \alert{agricultural land use and the composition of riparian buffers}.
+
+TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}}
 
 ____
 
