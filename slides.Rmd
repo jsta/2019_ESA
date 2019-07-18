@@ -122,46 +122,11 @@ ____
 
 \vspace{1em}
 
-\textbf{1. Tractable - Limited number of predictors, avoids multicolinearity}
+1\. Informative - Allows for interpretation of variable importance
 
-2\. Reliable - Provides an estimate of parameter uncertainity
+> All predictors were treated as global (fixed) effects except for watershed land-use which was treated as spatially varying.
 
-3\. Informative - Allows for interpretation of variable importance
-
-## Methods - Mixed modelling
-\small
-
-\textbf{One variable from each predictor category was treated as a global (fixed) effect}
-
-\alert{For TP}, this was Buffer Ag, P fertilizer input, Baseflow, and Max depth.
-
-\alert{For TN}, this was Buffer Ag, N fertilizer input, Soil organic carbon, and Max depth.
-
-\textbf{Watershed land-use cover was treated as a spatially varying (random) effect}
-
-\alert{For TN, TP}, this was one of Ag, Pasture, Corn, Soybeans, etc.
-
-<!-- Many of the variables within predictor categories are related. -->
-
-<!-- Choose fixed effect variables based on the single strongest relationship from the prior correlation analysis. -->
-
-<!-- to intrepret the relative influence of each _category_ of predictors. -->
-
-\vspace{1em}
-
-
-
-<!-- [**figure**] -->
-
-<!-- Therefore, \alert{we modelled a global relationship between most variables and lake nutrients}. -->
-
-<!-- [**Cartoon model descriptions**] -->
-
-<!-- Why are proxy variables used for spatial random effects? -->
-
-<!-- Which variables were assigned to each category? -->
-
-<!-- Modelling justification from Collins XXXX as well as Filstrup 2018. -->
+> Model selection by leave-one-out cross validation to arrive at the "best" watershed land use predictor.
 
 ## Methods - Regression Modelling
 \small
@@ -173,8 +138,6 @@ ____
 <!-- Evaluate spatial variation in the relationships between lake nutrients and Ag proxies. -->
 
 <!-- ### Assumption 2 -->
-
-
 
 \begin{figure}
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/02_hierarchical_demo-1.png}
@@ -192,33 +155,54 @@ ____
 
 \vspace{1em}
 
-1\. Tractable - Limited number of predictors, avoids multicolinearity
-
-\textbf{2. Reliable - Provides an estimate of parameter uncertainity}
-
-3\. Informative - Allows for interpretation of variable importance
-
-## Methods - Statistical modelling
-\small
-
-\alert{Build a multivariate model to explain nutrients in lakes} that is:
-
-\vspace{1em}
-
-1\. Tractable - Limited number of predictors, avoids multicolinearity
-
 2\. Reliable - Provides an estimate of parameter uncertainity
 
-\textbf{3. Informative - Allows for interpretation of variable importance}
+> Fit model in a Bayesian framework where predictor coefficients are given "horseshoe" priors.
+
+[**Image of a horseshoe prior?**]
+
+<!-- ## Methods - Mixed modelling -->
+<!-- \small -->
+
+<!-- \textbf{One variable from each predictor category was treated as a global (fixed) effect} -->
+
+<!-- \alert{For TP}, this was Buffer Ag, P fertilizer input, Baseflow, and Max depth. -->
+
+<!-- \alert{For TN}, this was Buffer Ag, N fertilizer input, Soil organic carbon, and Max depth. -->
+
+<!-- \textbf{Watershed land-use cover was treated as a spatially varying (random) effect} -->
+
+<!-- \alert{For TN, TP}, this was one of Ag, Pasture, Corn, Soybeans, etc. -->
+
+<!-- Many of the variables within predictor categories are related. -->
+
+<!-- Choose fixed effect variables based on the single strongest relationship from the prior correlation analysis. -->
+
+<!-- to intrepret the relative influence of each _category_ of predictors. -->
+
+<!-- \vspace{1em} -->
+
+<!-- [**figure**] -->
+
+<!-- Therefore, \alert{we modelled a global relationship between most variables and lake nutrients}. -->
+
+<!-- [**Cartoon model descriptions**] -->
+
+<!-- Why are proxy variables used for spatial random effects? -->
+
+<!-- Which variables were assigned to each category? -->
+
+<!-- Modelling justification from Collins XXXX as well as Filstrup 2018. -->
 
 ## Results - TP Model 
 \small
 
-Fixed effect coefficients were markedly different among predictor categories.
+Several fixed effect coefficients like Baseflow and Max depth had a strong influence on predicted TP concentrations.
+<!-- Fixed effect coefficients were markedly different among predictor categories. -->
 <!-- # Note how different in magnitude baseflow and max depth are from the others. 
 A one sd change in either will have a large effect on the fitted value -->
 
-Spatial random effects cleanly capture additional variation.
+No evidence for spatial variation in the relationship between watershed Ag land use and TP.
 
   \begin{columns}
 \begin{column}{0.6\textwidth}
@@ -232,9 +216,9 @@ Spatial random effects cleanly capture additional variation.
 ## Results - TN Model 
 \small
 
-Fixed effect coefficients similar among predictor categories.
+Few fixed effect coefficients had a strong influence on predicted TN concentrations.
 
-Specific regions have markedly different spatial random effect slopes.
+Several regions appear to be more sensitive to watershed corn land use cover.
 
 \begin{columns}
 \begin{column}{0.6\textwidth}
@@ -248,7 +232,8 @@ Specific regions have markedly different spatial random effect slopes.
 ## Results - TN Model
 \small
 
-Lake TN in highlighted regions were more sensitive to Ag relative to other regions.
+Regions that are Ag sensitive appear to have lower soil clay content, higher N deposition, and lower TP concentrations.
+
 \vspace{2em}
 
 \begin{columns}
@@ -264,7 +249,7 @@ Lake TN in highlighted regions were more sensitive to Ag relative to other regio
 Lake TN in highlighted regions may be more sensitive to Ag because:
 \vspace{2em}
 
-Fields in these regions have more direct drainage because they have wetland soils.
+Fields in these regions have more direct drainage due to higher prevalence of wetland soils.
 
 Lakes in these regions are P limited so excess TN accumulates in the water column \tiny[@filstrupRelationshipChlorophyllPhosphorus2017]\small
 
@@ -283,7 +268,7 @@ Lakes in these regions are affected by an interaction among multiple land use ty
 
 > Both lake TP and lake TN were related to granular measures of Ag activity.
 
-> Lake TN concentration was strongly related to watershed corn cover and riparian buffer composition.
+> Lake TN concentration was related to watershed corn cover and riparian buffer composition.
 
 \vspace{-0.5em}
 
@@ -301,33 +286,33 @@ Lakes in these regions are affected by an interaction among multiple land use ty
 
 <!-- \tiny \small (cite Collins et al. 2017) -->
 
-## Methods - Data
-\small
+<!-- ## Methods - Data -->
+<!-- \small -->
 
-\textblockcolour{colorlgray}
-\begin{textblock}{12}(1,6)
-\small
-Inputs \hspace{17pt} - Fertilizer and manure applications\\Land use \hspace{2pt} - Ag, Pasture, Row crop, Corn, Soybeans, \\ \hspace{62pt} N-fixers, Small grains\\Transport \hspace{0pt} - Baseflow, Soil characteristics, Precipitation\\Buffers \hspace{13pt} - See \emph{Land use}\\Lake \hspace{26pt} - Max depth, Area, etc.
-\end{textblock}
+<!-- \textblockcolour{colorlgray} -->
+<!-- \begin{textblock}{12}(1,6) -->
+<!-- \small -->
+<!-- Inputs \hspace{17pt} - Fertilizer and manure applications\\Land use \hspace{2pt} - Ag, Pasture, Row crop, Corn, Soybeans, \\ \hspace{62pt} N-fixers, Small grains\\Transport \hspace{0pt} - Baseflow, Soil characteristics, Precipitation\\Buffers \hspace{13pt} - See \emph{Land use}\\Lake \hspace{26pt} - Max depth, Area, etc. -->
+<!-- \end{textblock} -->
 
-Correlation analysis to determine how lake nutrients are related to predictors from each category.
+<!-- Correlation analysis to determine how lake nutrients are related to predictors from each category. -->
 
-\begin{center}
-\includegraphics[width=0.85\paperwidth]{images/correlation_diagram.png}
-\end{center}
+<!-- \begin{center} -->
+<!-- \includegraphics[width=0.85\paperwidth]{images/correlation_diagram.png} -->
+<!-- \end{center} -->
 
-## Results - Correlation analysis
-\small
+<!-- ## Results - Correlation analysis -->
+<!-- \small -->
 
-\alert{Lake phosphorus concentrations} are most strongly associated with \alert{lake characteristics and measures of watershed nutrient transport}.
+<!-- \alert{Lake phosphorus concentrations} are most strongly associated with \alert{lake characteristics and measures of watershed nutrient transport}. -->
 
-TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}}
+<!-- TP ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} -->
 
-\vspace{0.5em}
+<!-- \vspace{0.5em} -->
 
-\alert{Lake nitrogen concentrations} are most strongly associated with \alert{agricultural land use and the composition of riparian buffers}.
+<!-- \alert{Lake nitrogen concentrations} are most strongly associated with \alert{agricultural land use and the composition of riparian buffers}. -->
 
-TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}}
+<!-- TN ~ \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/proxy_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/buffer_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/input_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/lake_key}} > \raisebox{-.35\height}{\includegraphics[width=0.1\paperwidth]{images/transport_key}} -->
 
 ____
 
