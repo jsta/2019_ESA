@@ -118,15 +118,15 @@ ____
 ## Methods - Statistical modelling
 \small
 
-\alert{Build a multivariate model to explain nutrients in lakes} that is:
+\alert{Build a multivariate model to explain nutrients in lakes} that:
 
 \vspace{1em}
 
-1\. Informative - Allows for interpretation of variable importance
+1\. Tests for spatial variation in nutrient versus land use relationships
 
-> All predictors were treated as global (fixed) effects except for watershed land-use which was treated as spatially varying.
+> \raggedright All predictors were treated as global (fixed) effects except for watershed land-use which was treated as spatially varying.
 
-> Model selection by leave-one-out cross validation to arrive at the "best" watershed land use predictor.
+> \raggedright Model selection by leave-one-out cross validation to arrive at the "best" watershed land use predictor.
 
 ## Methods - Regression Modelling
 \small
@@ -151,15 +151,19 @@ ____
 ## Methods - Statistical modelling
 \small
 
-\alert{Build a multivariate model to explain nutrients in lakes} that is:
+\alert{Build a multivariate model to explain nutrients in lakes} that:
 
 \vspace{1em}
 
-2\. Reliable - Provides an estimate of parameter uncertainity
+2\. Allows for interpretation of variable importance
 
-> Fit model in a Bayesian framework where predictor coefficients are given "horseshoe" priors.
+> \raggedright Fit model in a Bayesian framework where predictor coefficients are given "horseshoe" priors.
 
-[**Image of a horseshoe prior?**]
+\vspace{-1em}
+
+\begin{center}
+\includegraphics[height=3.8cm]{images/horseshoe_carvalho.png}
+\end{center}
 
 <!-- ## Methods - Mixed modelling -->
 <!-- \small -->
