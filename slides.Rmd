@@ -220,9 +220,14 @@ A one sd change in either will have a large effect on the fitted value -->
 
 Spatial random effects cleanly capture additional variation.
 
-  \begin{figure}
-    \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_summary-1.png}\hspace{1em}\includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_re-1.png}
-  \end{figure}
+  \begin{columns}
+\begin{column}{0.6\textwidth}
+    \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_summary-1.png}
+\end{column}
+\begin{column}{0.4\textwidth}
+  \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_re-1.png}
+\end{column}
+\end{columns}
   
 ## Results - TN Model 
 \small
@@ -231,10 +236,15 @@ Fixed effect coefficients similar among predictor categories.
 
 Specific regions have markedly different spatial random effect slopes.
 
-  \begin{figure}
-    \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_summary-1.png}\hspace{1em}\includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_re-1.png}
-  \end{figure}
-  
+\begin{columns}
+\begin{column}{0.6\textwidth}
+    \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_summary-1.png}
+\end{column}
+\begin{column}{0.4\textwidth}
+  \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_re-1.png}
+\end{column}
+\end{columns}
+
 ## Results - TN Model
 \small
 
