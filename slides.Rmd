@@ -157,7 +157,7 @@ ____
 
 2\. Allows for interpretation of variable importance
 
-> \raggedright Fit model in a Bayesian framework where predictor coefficients are given "horseshoe" priors.
+> \raggedright Fit model in a Bayesian framework where predictor coefficients are given "horseshoe" priors. \tiny [@carvalhoHorseshoeEstimatorSparse2010]
 
 \vspace{-1em}
 
@@ -201,7 +201,7 @@ ____
 ## Results - TP Model 
 \small
 
-Several fixed effect coefficients like Baseflow and Max depth had a strong influence on predicted TP concentrations.
+Baseflow and Max depth had a strong influence on predicted TP concentrations.
 <!-- Fixed effect coefficients were markedly different among predictor categories. -->
 <!-- # Note how different in magnitude baseflow and max depth are from the others. 
 A one sd change in either will have a large effect on the fitted value -->
@@ -220,7 +220,7 @@ No evidence for spatial variation in the relationship between watershed Ag land 
 ## Results - TN Model 
 \small
 
-Few fixed effect coefficients had a strong influence on predicted TN concentrations.
+Buffer Ag land use cover had the strongest influence on predicted TN concentrations.
 
 Several regions appear to be more sensitive to watershed corn land use cover.
 
@@ -248,25 +248,23 @@ Regions that are Ag sensitive appear to have lower soil clay content, higher N d
 \end{columns}
   
 ## Discussion
-\small
+\footnotesize
 
 Lake TN in highlighted regions may be more sensitive to Ag because:
 \vspace{2em}
 
 Fields in these regions have more direct drainage due to higher prevalence of wetland soils.
 
-Lakes in these regions are P limited so excess TN accumulates in the water column \tiny[@filstrupRelationshipChlorophyllPhosphorus2017]\small
+Lakes in these regions are P limited so excess TN accumulates in the water column \tiny[@filstrupRelationshipChlorophyllPhosphorus2017]\footnotesize
 
-Lakes in these regions are less hypereutrophic \tiny[@wagnerLandscapeDriversRegional2011]\small
+Lakes in these regions are less hypereutrophic \tiny[@wagnerLandscapeDriversRegional2011]\footnotesize
 <!-- 18 percent vs 12 percent (jsta calculated) -->
 <!-- TN not lower in these regions but still ... -->
 
 Lakes in these regions are affected by an interaction among multiple land use types.
 
-
-
 ## Conclusions
-\small
+\footnotesize
 
 \textbf{1. Are more granular measures of Ag activity related to lake water quality (TN, TP) across hundreds of lakes and their watersheds?}
 
