@@ -127,9 +127,9 @@ What are some things we’ve learned from macroscale, aggregated-data studies?
 \footnotesize
 
 \textblockcolour{colorlgray}
-\begin{textblock}{12}(1,4)
+\begin{textblock}{12}(1,2)
 \small
-\textbf{Model type:} \hspace{29pt} Hierarchical Bayesian\\ \textbf{Predictands:} \hspace{25pt} TP, TN \\ \textbf{Global predictors:} 12 Granular Ag variables\\ \hspace{111pt} 3 Lake and watershed characteristics \\ \textbf{Variable selection:} None (\emph{horseshoe} shrinkage) \\ \textbf{Regional predictors:} 7 Watershed land-use variables \\ \textbf{Model selection:} Cross-validation on watershed land-use
+\textbf{Model type:} \hspace{29pt} Hierarchical Bayesian\\ ~ \\ \textbf{Predictands:} \hspace{25pt} TP, TN \\ ~ \\ \textbf{Global predictors:} 12 Granular Ag variables\\ \hspace{111pt} 3 Lake and watershed characteristics \\ ~ \\ \textbf{Variable selection:} None (\emph{horseshoe} shrinkage) \\ ~ \\ \textbf{Regional predictors:} 7 Watershed land-use variables \\ ~ \\ \textbf{Model selection:} Cross-validation on watershed land-use
 \end{textblock}
 
 <!-- \textblockcolour{colorlgray} -->
