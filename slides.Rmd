@@ -31,10 +31,19 @@ output:
 
 \alert{Watershed land-use summaries are spatially coarse measures} that may mask underlying relationships.
 
+\vspace{-1.5em}
+
+<!-- \draw [step=1.0,blue, very thick] (-4,-4) grid (2,2); -->
+  \begin{tikzpicture}[remember picture, overlay]
+  \node[rotate=90] at (-0.5,-3.3) {\footnotesize Poorly Buffered};
+  \draw[decoration={brace,mirror,raise=5pt,amplitude=0.3cm},decorate,line width=0.6mm]
+  (0.3,-2.6) -- (0.3,-4);
+  \end{tikzpicture}
+
   \begin{figure}
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
   \end{figure}
-
+  
 ____
 
 \small
@@ -198,7 +207,7 @@ ____
 
 <!-- Modelling justification from Collins XXXX as well as Filstrup 2018. -->
 
-## Results - TP Model 
+## Results - Fixed effects
 \small
 
 Baseflow and Max depth had a strong influence on predicted TP concentrations.
@@ -206,27 +215,27 @@ Baseflow and Max depth had a strong influence on predicted TP concentrations.
 <!-- # Note how different in magnitude baseflow and max depth are from the others. 
 A one sd change in either will have a large effect on the fitted value -->
 
-No evidence for spatial variation in the relationship between watershed Ag land use and TP.
+Buffer Ag land use cover had the strongest influence on predicted TN concentrations.
 
   \begin{columns}
 \begin{column}{0.6\textwidth}
     \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_summary-1.png}
 \end{column}
 \begin{column}{0.4\textwidth}
-  \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_re-1.png}
+    \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_summary-1.png}
 \end{column}
 \end{columns}
-  
-## Results - TN Model 
+
+## Results - Random effects
 \small
 
-Buffer Ag land use cover had the strongest influence on predicted TN concentrations.
+No evidence for spatial variation in the relationship between watershed Ag land use and TP.
 
 Several regions appear to be more sensitive to watershed corn land use cover.
 
 \begin{columns}
 \begin{column}{0.6\textwidth}
-    \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_summary-1.png}
+\includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_re-1.png}
 \end{column}
 \begin{column}{0.4\textwidth}
   \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_re-1.png}
@@ -247,21 +256,21 @@ Regions that are Ag sensitive appear to have lower soil clay content, higher N d
   \includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_compare-1.png}
 \end{columns}
   
-## Discussion
-\footnotesize
+<!-- ## Discussion -->
+<!-- \footnotesize -->
 
-Lake TN in highlighted regions may be more sensitive to Ag because:
-\vspace{2em}
+<!-- Lake TN in highlighted regions may be more sensitive to Ag because: -->
+<!-- \vspace{2em} -->
 
-Fields in these regions have more direct drainage due to higher prevalence of wetland soils.
+<!-- Fields in these regions have more direct drainage due to higher prevalence of wetland soils. -->
 
-Lakes in these regions are P limited so excess TN accumulates in the water column \tiny[@filstrupRelationshipChlorophyllPhosphorus2017]\footnotesize
+<!-- Lakes in these regions are P limited so excess TN accumulates in the water column \tiny[@filstrupRelationshipChlorophyllPhosphorus2017]\footnotesize -->
 
-Lakes in these regions are less hypereutrophic \tiny[@wagnerLandscapeDriversRegional2011]\footnotesize
-<!-- 18 percent vs 12 percent (jsta calculated) -->
-<!-- TN not lower in these regions but still ... -->
+<!-- Lakes in these regions are less hypereutrophic \tiny[@wagnerLandscapeDriversRegional2011]\footnotesize -->
+<!-- <!-- 18 percent vs 12 percent (jsta calculated) --> 
+<!-- <!-- TN not lower in these regions but still ... -->
 
-Lakes in these regions are affected by an interaction among multiple land use types.
+<!-- Lakes in these regions are affected by an interaction among multiple land use types. -->
 
 ## Conclusions
 \footnotesize
