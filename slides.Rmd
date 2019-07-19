@@ -8,35 +8,71 @@ output:
     keep_tex: true
 ---
 
-## Introduction
+## Introduction - Lake nutrients
 \small
 
-\alert{Ag land-use is associated with} increased nutrient loading to lakes and \alert{higher nutrient concentrations}.
+<!-- \alert{Ag land-use is associated with higher lake nutrient concentrations} -->
 
-\vspace{1em}
+\vspace{2em}
 
-\centerline{\includegraphics[width=11cm]{images/tn_vs_ag.png}}\hspace*{8cm}
+\centerline{\includegraphics[width=12cm]{images/tn_vs_ag.png}}\hspace*{8cm}
 
-## Background
+## Introduction - Nutrient predictors
 \small
 
-\alert{Ag land-use is an aggregated measure} that may mask underlying relationships.
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{itemize}[leftmargin=*]
+\item \begin{tabular}{cc}
+        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/input_key}} & Nutrient inputs - Fertilizer and manure applications
+       \end{tabular}
+\item \begin{tabular}{cc}
+        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/transport_key}} & Nutrient transport - Baseflow, soils, precipitation
+        \end{tabular}
+\item \begin{tabular}{cc}
+        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/proxy_key}} & Land-use cover - Specific crops, etc.
+        \end{tabular}
+\item \begin{tabular}{cc}
+\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer composition - \emph{Land-use cover}
+\end{tabular}
+\item \begin{tabular}{cc}
+\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/lake_key}} & Lake characteristics - Depth, area, etc.
+\end{tabular}
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}[leftmargin=*]
+\item
+\end{itemize}
+\end{column}
+\end{columns}
+
+\tiny [@collinsLakeNutrientStoichiometry2017]
+
+## Background - Land-use cover
+\small
+
+\vspace{-2em}
+
+<!-- \alert{Ag land-use is an aggregated measure}  -->
+<!-- that may mask underlying relationships. -->
 
   \begin{figure}
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/cdl_vs_nlcd-1.png}
   \end{figure}
 
-## Background
+## Background - Spatial resolution
 \small
 
-\alert{Watershed land-use summaries are spatially coarse measures} that may mask underlying relationships.
+<!-- \alert{Watershed land-use summaries are spatially coarse}  -->
+ <!-- measures that may mask underlying relationships. -->
 
 \vspace{-1.5em}
 
 <!-- \draw [step=1.0,blue, very thick] (-4,-4) grid (2,2); -->
   \begin{tikzpicture}[remember picture, overlay]
   \node[rotate=90] at (-0.5,-3.3) {\footnotesize Poorly Buffered};
-  \draw[decoration={brace,mirror,raise=5pt,amplitude=0.3cm},decorate,line width=0.6mm]
+  \draw[decoration={brace,mirror,raise=5pt,amplitude=0.3cm},decorate,line width=0.4mm]
   (0.3,-2.6) -- (0.3,-4);
   \end{tikzpicture}
 
@@ -44,20 +80,17 @@ output:
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
   \end{figure}
   
-____
-
+## Background - Extent vs resolution
 \small
 
-<!-- Matrix contrast between detailed Ag and scale -->
-<!--  2 x 2 -->
-<!--  2 x 2 -->
-<!-- Macroscale vs fine scale -->
-<!-- Granular Ag vs detailed Ag -->
-\vspace{-1em}
+\vspace{-2em}
 
 \begin{figure}
     \includegraphics[width=11cm]{images/granularity.png}
   \end{figure}
+
+\vspace{-2em}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 
 What are some things we’ve learned from fine scale, granular-data studies?
 
@@ -208,23 +241,18 @@ ____
 <!-- Modelling justification from Collins XXXX as well as Filstrup 2018. -->
 
 ## Results - Fixed effects
-\small
+\footnotesize
 
 Baseflow and Max depth had a strong influence on predicted TP concentrations.
 <!-- Fixed effect coefficients were markedly different among predictor categories. -->
 <!-- # Note how different in magnitude baseflow and max depth are from the others. 
 A one sd change in either will have a large effect on the fitted value -->
 
-Buffer Ag land use cover had the strongest influence on predicted TN concentrations.
+Buffer Ag land had a stronger influence on predicted TN concentrations relative to TP.
 
-  \begin{columns}
-\begin{column}{0.6\textwidth}
-    \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_summary-1.png}
-\end{column}
-\begin{column}{0.4\textwidth}
-    \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_summary-1.png}
-\end{column}
-\end{columns}
+\begin{figure}
+\includegraphics[height=4.5cm]{../../JournalSubmissions/lagos_ag/figures/fe-1.png}
+\end{figure}
 
 ## Results - Random effects
 \small
@@ -233,14 +261,9 @@ No evidence for spatial variation in the relationship between watershed Ag land 
 
 Several regions appear to be more sensitive to watershed corn land use cover.
 
-\begin{columns}
-\begin{column}{0.6\textwidth}
-\includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tp_re-1.png}
-\end{column}
-\begin{column}{0.4\textwidth}
-  \includegraphics[height=5.0cm]{../../JournalSubmissions/lagos_ag/figures/tn_re-1.png}
-\end{column}
-\end{columns}
+\begin{figure}
+\includegraphics[height=4.5cm]{../../JournalSubmissions/lagos_ag/figures/re-1.png}
+\end{figure}
 
 ## Results - TN Model
 \small

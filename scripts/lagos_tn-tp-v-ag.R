@@ -34,4 +34,4 @@ dt <- dplyr::filter(lg$iws.lulc,
 gg_out <- cowplot::plot_grid(gg_out, NULL, rel_widths = c(1, 0.2))
 
 ggsave("images/tn_vs_ag.png", gg_out, bg = "transparent",
-       width = 5.5, height = 3)
+       width = 5.5, height = 2.4)
