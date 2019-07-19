@@ -15,7 +15,7 @@ output:
 
 \vspace{2em}
 
-\centerline{\includegraphics[width=12cm]{images/tn_vs_ag.png}}\hspace*{8cm}
+\centerline{\includegraphics[width=13cm]{images/tn_vs_ag.png}}\hspace*{8cm}
 
 ## Introduction - Nutrient predictors
 \small
@@ -33,7 +33,7 @@ output:
         \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/proxy_key}} & Land-use cover - Specific crops, etc.
         \end{tabular}
 \item \begin{tabular}{cc}
-\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer composition - \emph{Land-use cover}
+\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer composition - Land-use cover - Specific crops, etc.
 \end{tabular}
 \item \begin{tabular}{cc}
 \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/lake_key}} & Lake characteristics - Depth, area, etc.
@@ -71,8 +71,8 @@ output:
 
 <!-- \draw [step=1.0,blue, very thick] (-4,-4) grid (2,2); -->
   \begin{tikzpicture}[remember picture, overlay]
-  \node[rotate=90] at (-0.5,-3.3) {\footnotesize Poorly Buffered};
-  \draw[decoration={brace,mirror,raise=5pt,amplitude=0.3cm},decorate,line width=0.4mm]
+  \node[rotate=90] at (-0.5,-3.3) {\footnotesize \alert{Poorly Buffered}};
+  \draw[decoration={brace,mirror,raise=5pt,amplitude=0.2cm},decorate,line width=0.4mm]
   (0.3,-2.6) -- (0.3,-4);
   \end{tikzpicture}
 
@@ -80,7 +80,7 @@ output:
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
   \end{figure}
   
-## Background - Extent vs resolution
+## Background - The macroscale
 \small
 
 \vspace{-2em}
@@ -103,74 +103,42 @@ What are some things we’ve learned from macroscale, aggregated-data studies?
 
 \vspace{1em}
 
-\textbf{2. Do relationships between Ag activities and lake water quality vary spatially among hydrologic and climatic regions?}
+\textbf{2. Do relationships between watershed land use and lake water quality vary spatially among hydrologic and climatic regions?}
 
 <!-- [**Pictures?**] -->
 
-## Methods - 500 lake catchments
+## Methods - 500 lake catchments...
 \small
 
-\begin{figure}
-\includegraphics[width=6cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}\hspace{1em}\includegraphics[width=4cm]{../../JournalSubmissions/lagos_ag/figures/trophic_state-1.png}
-\end{figure}
-
-Our study lakes have high Ag land use (> 40%).
-
-Our study lakes are more often eutrophic relative to lakes in general.
-
-## Methods - Granular Ag data
-\small
-
-\vspace{-2em}
+<!-- \alert{with high Ag land-use cover} -->
 
 \begin{columns}
-\begin{column}{0.5\textwidth}
-\begin{itemize}[leftmargin=*]
-\item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/input_key}} & Nutrient inputs - Fertilizer and manure applications
-       \end{tabular}
-\item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/transport_key}} & Nutrient transport - Baseflow, soils, precipitation
-        \end{tabular}
-\item \begin{tabular}{cc}
-        \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/proxy_key}} & Land-use cover - Specific crops, etc.
-        \end{tabular}
-\item \begin{tabular}{cc}
-\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer composition - \emph{Land-use cover}
-\end{tabular}
-\item \begin{tabular}{cc}
-\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/lake_key}} & Lake characteristics - Depth, area, etc.
-\end{tabular}
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{itemize}[leftmargin=*]
-\item
-\end{itemize}
-\end{column}
+  \begin{column}[T]{0.5\textwidth}
+    \includegraphics[width=7cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}
+  \end{column}
+  \begin{column}{0.05\textwidth}
+  \end{column}
+  \begin{column}[T]{0.4\textwidth}
+    \includegraphics[width=4cm]{../../JournalSubmissions/lagos_ag/figures/trophic_state-1.png}
+  \end{column}
 \end{columns}
 
-\tiny [@collinsLakeNutrientStoichiometry2017]
-
-____
-
-\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)]{%
-  \includegraphics[width=0.9\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-1}};
-
-## Methods - Statistical modelling
-\small
-
-\alert{Build a multivariate model to explain nutrients in lakes} that:
-
-\vspace{1em}
-
-1\. Tests for spatial variation in nutrient versus land use relationships
-
-> \raggedright All predictors were treated as global (fixed) effects except for watershed land-use which was treated as spatially varying.
-
-> \raggedright Model selection by leave-one-out cross validation to arrive at the "best" watershed land use predictor.
-
 ## Methods - Regression Modelling
+\footnotesize
+
+\textbf{Model type:} \hspace{6pt} Hierarchical Bayesian
+
+\textbf{Predictands:} \hspace{5pt} TP, TN
+
+\textbf{Global predictors:} 12 Granular Ag variables\3 Lake and watershed characteristics
+
+\textbf{Variable selection:} None (horseshoe _shrinkage_ approach)
+
+\textbf{Regionally varying predictors:} Watershed land-use
+
+\textbf{Model selection:} Cross-validation among watershed land-use
+
+## Methods - Regionally varying predictors
 \small
 
 <!-- Choose random effect variable(s) that we expect to vary regionally. -->
@@ -184,28 +152,46 @@ ____
 \begin{figure}
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/02_hierarchical_demo-1.png}
   \end{figure}
+  
+____
+
+\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)]{%
+  \includegraphics[width=0.9\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-1}};
+
+<!-- ## Methods - Statistical modelling -->
+<!-- \small -->
+
+<!-- \alert{Build a multivariate model to explain nutrients in lakes} that: -->
+
+<!-- \vspace{1em} -->
+
+<!-- 1\. Tests for spatial variation in nutrient versus land use relationships -->
+
+<!-- > \raggedright All predictors were treated as global (fixed) effects except for watershed land-use which was treated as spatially varying. -->
+
+<!-- > \raggedright Model selection by leave-one-out cross validation to arrive at the "best" watershed land use predictor. -->
 
 <!-- Therefore, \alert{we modelled the relationship between land use variables and lake nutrients as spatially variable}.  -->
 
 <!-- Spatial random effects estimates are weighted by sample size. -->
 <!-- \vspace{1em} -->
 
-## Methods - Statistical modelling
-\small
+<!-- ## Methods - Statistical modelling -->
+<!-- \small -->
 
-\alert{Build a multivariate model to explain nutrients in lakes} that:
+<!-- \alert{Build a multivariate model to explain nutrients in lakes} that: -->
 
-\vspace{1em}
+<!-- \vspace{1em} -->
 
-2\. Allows for interpretation of variable importance
+<!-- 2\. Allows for interpretation of variable importance -->
 
-> \raggedright Fit model in a Bayesian framework where predictor coefficients are given "horseshoe" priors. \tiny [@carvalhoHorseshoeEstimatorSparse2010]
+<!-- > \raggedright Fit model in a Bayesian framework where predictor coefficients are given "horseshoe" priors. \tiny [@carvalhoHorseshoeEstimatorSparse2010] -->
 
-\vspace{-1em}
+<!-- \vspace{-1em} -->
 
-\begin{center}
-\includegraphics[height=3.8cm]{images/horseshoe_carvalho.png}
-\end{center}
+<!-- \begin{center} -->
+<!-- \includegraphics[height=3.8cm]{images/horseshoe_carvalho.png} -->
+<!-- \end{center} -->
 
 <!-- ## Methods - Mixed modelling -->
 <!-- \small -->
@@ -268,7 +254,7 @@ Several regions appear to be more sensitive to watershed corn land use cover.
 ## Results - TN Model
 \small
 
-Regions that are Ag sensitive appear to have lower soil clay content, higher N deposition, and lower TP concentrations.
+Ag sensitive regions have lower soil clay content and higher N deposition rates.
 
 \vspace{2em}
 
@@ -300,15 +286,15 @@ Regions that are Ag sensitive appear to have lower soil clay content, higher N d
 
 \textbf{1. Are more granular measures of Ag activity related to lake water quality (TN, TP) across hundreds of lakes and their watersheds?}
 
-> Both lake TP and lake TN were related to granular measures of Ag activity.
+> Yes, both lake TP and lake TN were related to granular measures of Ag activity.
 
-> Lake TN concentration was related to watershed corn cover and riparian buffer composition.
+> But, specific crop land use and riparian buffer composition was more influential in the lake TN models.
 
 \vspace{-0.5em}
 
 \textbf{2. Do relationships between Ag activities and lake water quality vary spatially among hydrologic and climatic regions?}
 
-> The relationship between lake TN and land-use cover was spatially variable. 
+> Yes, in the case of lake TN concentrations. 
 
 <!-- This variability may be related to differences in lake TP, atmospheric nitrogen deposition, or soil clay content. -->
 
