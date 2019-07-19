@@ -126,17 +126,17 @@ What are some things we’ve learned from macroscale, aggregated-data studies?
 ## Methods - Regression Modelling
 \footnotesize
 
-\textbf{Model type:} \hspace{6pt} Hierarchical Bayesian
+\textblockcolour{colorlgray}
+\begin{textblock}{12}(1,4)
+\small
+\textbf{Model type:} \hspace{29pt} Hierarchical Bayesian\\ \textbf{Predictands:} \hspace{25pt} TP, TN \\ \textbf{Global predictors:} 12 Granular Ag variables\\ \hspace{111pt} 3 Lake and watershed characteristics \\ \textbf{Variable selection:} None (\emph{horseshoe} shrinkage) \\ \textbf{Regional predictors:} 7 Watershed land-use variables \\ \textbf{Model selection:} Cross-validation on watershed land-use
+\end{textblock}
 
-\textbf{Predictands:} \hspace{5pt} TP, TN
-
-\textbf{Global predictors:} 12 Granular Ag variables\3 Lake and watershed characteristics
-
-\textbf{Variable selection:} None (horseshoe _shrinkage_ approach)
-
-\textbf{Regionally varying predictors:} Watershed land-use
-
-\textbf{Model selection:} Cross-validation among watershed land-use
+<!-- \textblockcolour{colorlgray} -->
+<!-- \begin{textblock}{12}(1,6) -->
+<!-- \small -->
+<!-- \textbf{Model type:} \hspace{6pt} Hierarchical Bayesian \\ \textbf{Predictands:} \hspace{5pt} TP, TN \\ \textbf{Global predictors:} 12 Granular Ag variables \\ \hspace{0.2em} 3 Lake and watershed characteristics \\ \textbf{Variable selection:} None (horseshoe _shrinkage_ approach) \\ \textbf{Regionally varying predictors:} 7 Watershed land-use variables \\ \textbf{Model selection:} Cross-validation among watershed land-use -->
+<!-- \end{textblock} -->
 
 ## Methods - Regionally varying predictors
 \small
@@ -240,7 +240,7 @@ Buffer Ag land had a stronger influence on predicted TN concentrations relative 
 \includegraphics[height=4.5cm]{../../JournalSubmissions/lagos_ag/figures/fe-1.png}
 \end{figure}
 
-## Results - Random effects
+## Results - Regionally varying effects
 \small
 
 No evidence for spatial variation in the relationship between watershed Ag land use and TP.
@@ -306,14 +306,14 @@ Ag sensitive regions have lower soil clay content and higher N deposition rates.
 
 <!-- \tiny \small (cite Collins et al. 2017) -->
 
-<!-- ## Methods - Data -->
-<!-- \small -->
+## Methods - Data
+\small
 
-<!-- \textblockcolour{colorlgray} -->
-<!-- \begin{textblock}{12}(1,6) -->
-<!-- \small -->
-<!-- Inputs \hspace{17pt} - Fertilizer and manure applications\\Land use \hspace{2pt} - Ag, Pasture, Row crop, Corn, Soybeans, \\ \hspace{62pt} N-fixers, Small grains\\Transport \hspace{0pt} - Baseflow, Soil characteristics, Precipitation\\Buffers \hspace{13pt} - See \emph{Land use}\\Lake \hspace{26pt} - Max depth, Area, etc. -->
-<!-- \end{textblock} -->
+\textblockcolour{colorlgray}
+\begin{textblock}{12}(1,6)
+\small
+Inputs \hspace{17pt} - Fertilizer and manure applications\\Land use \hspace{2pt} - Ag, Pasture, Row crop, Corn, Soybeans, \\ \hspace{62pt} N-fixers, Small grains\\Transport \hspace{0pt} - Baseflow, Soil characteristics, Precipitation\\Buffers \hspace{13pt} - See \emph{Land use}\\Lake \hspace{26pt} - Max depth, Area, etc.
+\end{textblock}
 
 <!-- Correlation analysis to determine how lake nutrients are related to predictors from each category. -->
 
