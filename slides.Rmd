@@ -1,6 +1,6 @@
 ---
 title: Analysis of 500 lake catchments reveals the relationship between crop type, fertilizer and manure inputs and lake nutrient concentrations
-author: Joe Stachelek, Cayelan C. Carey, Kelly M. Cobourn, Armen R. Kemanian, Tyler Wagner, Kathleen C. Weathers, Weizhe Weng and Patricia A. Soranno
+author: \underline{\textbf{Joe Stachelek}}, Cayelan C. Carey, Kelly M. Cobourn, Armen R. Kemanian, Tyler Wagner, Kathleen C. Weathers, Weizhe Weng and Patricia A. Soranno
 date: "Ecological Society of America, 2019 August"
 bibliography: references.bib
 output: 
@@ -8,12 +8,14 @@ output:
     keep_tex: true
 ---
 
-## Introduction - Lake nutrients
+## Introduction
 \small
 
-<!-- \alert{Ag land-use is associated with higher lake nutrient concentrations} -->
-
 \vspace{2em}
+
+\alert{Ag land-use is associated with higher lake nutrient concentrations}
+
+\vspace{0.5em}
 
 \centerline{\includegraphics[width=13cm]{images/tn_vs_ag.png}}\hspace*{8cm}
 
@@ -33,7 +35,7 @@ output:
         \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/proxy_key}} & Land-use cover - Specific crops, etc.
         \end{tabular}
 \item \begin{tabular}{cc}
-\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer composition - Land-use cover - Specific crops, etc.
+\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer composition - Land-use cover, specific crops
 \end{tabular}
 \item \begin{tabular}{cc}
 \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/lake_key}} & Lake characteristics - Depth, area, etc.
@@ -154,10 +156,11 @@ What are some things we’ve learned from macroscale, aggregated-data studies?
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/02_hierarchical_demo-1.png}
   \end{figure}
   
-## Results - Nutrient concentration correlations
+## Results - Nutrient correlations
 
-\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)]{%
-  \includegraphics[width=0.9\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-1}};
+\begin{tikzpicture}[remember picture, overlay]
+  \node[opacity=1] at (5,-0.5) {\includegraphics[width=0.85\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-1}};
+\end{tikzpicture}
 
 <!-- ## Methods - Statistical modelling -->
 <!-- \small -->
