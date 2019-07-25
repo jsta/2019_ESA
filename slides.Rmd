@@ -1,6 +1,6 @@
 ---
 title: Analysis of 500 lake catchments reveals the relationship between crop type, fertilizer and manure inputs and lake nutrient concentrations
-author: \underline{\textbf{Joe Stachelek}}, Cayelan C. Carey, Kelly M. Cobourn, Armen R. Kemanian, Tyler Wagner, Kathleen C. Weathers, Weizhe Weng and Patricia A. Soranno
+author: \textbf{Joe Stachelek}, Cayelan C. Carey, Kelly M. Cobourn, Armen R. Kemanian, Tyler Wagner, Kathleen C. Weathers, Weizhe Weng and Patricia A. Soranno
 date: "Ecological Society of America, 2019 August"
 bibliography: references.bib
 output: 
@@ -13,7 +13,7 @@ output:
 
 \vspace{2em}
 
-\alert{Ag land-use is associated with higher lake nutrient concentrations}
+\alert{Ag land-use is associated with higher lake nutrient concentrations} \tiny [@sorannoLAGOSNEMultiscaledGeospatial2017]
 
 \vspace{0.5em}
 
@@ -51,7 +51,28 @@ output:
 
 \tiny [@collinsLakeNutrientStoichiometry2017]
 
-## Background - Land-use cover
+## Background - The macroscale
+\small
+
+\vspace{-2em}
+
+\begin{figure}
+    \includegraphics[width=11cm]{images/granularity.png}
+  \end{figure}
+
+<!-- \vspace{-2em} -->
+<!-- \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} -->
+
+<!-- ### What are some things we’ve learned from fine scale, granular-data studies? -->
+<!-- Field runoff is controlled by location of subsurface drainage, agricultural practices like conservation tillage and cover crop planting, as well as crop rotations, and the timing of fertilizer applications. -->
+
+<!-- What are some things we’ve learned from macroscale, aggregated-data studies? -->
+
+<!-- Both TN and TP concentrations are tied to Ag land use. -->
+
+<!-- P loading to streams is tied to hydrology -->
+
+## Background - Granular Ag data
 \small
 
 \vspace{-2em}
@@ -63,7 +84,29 @@ output:
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/cdl_vs_nlcd-1.png}
   \end{figure}
 
-## Background - Spatial resolution
+<!-- \draw [step=1.0,blue, very thick] (0,-2) grid (10,2); -->
+\begin{tikzpicture}[remember picture, overlay]
+  \color{black} 
+  \pgfsetarrowsstart{latex}
+  \pgfsetlinewidth{1ex}
+  \pgfpathmoveto{\pgfpoint{7.3cm}{0cm}}
+  \pgfpathlineto{\pgfpoint{2.5cm}{0cm}}
+  \pgfusepath{stroke}
+  \node at (5.1,-0.8) {\textbf{Granularity}};
+\end{tikzpicture}
+
+<!-- \node at (1,0) [ -->
+<!--     color=white, -->
+<!--     draw=black, -->
+<!--     single arrow, -->
+<!--     single arrow head extend=0.4cm, -->
+<!--     single arrow tip angle=110, -->
+<!--     single arrow head indent=0.1cm, -->
+<!--     minimum height=2cm, -->
+<!--     inner sep=1pt -->
+<!-- ] {}; -->
+
+## Background - Granular Ag data
 \small
 
 <!-- \alert{Watershed land-use summaries are spatially coarse}  -->
@@ -82,30 +125,14 @@ output:
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/satellite-1.png}
   \end{figure}
   
-## Background - The macroscale
-\small
-
-\vspace{-2em}
-
-\begin{figure}
-    \includegraphics[width=11cm]{images/granularity.png}
-  \end{figure}
-
-\vspace{-2em}
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-
-What are some things we’ve learned from fine scale, granular-data studies?
-
-What are some things we’ve learned from macroscale, aggregated-data studies?
-
 ## Research Question(s)
 \small
 
-\textbf{1. Are more granular measures of Ag activity related to lake water quality (TN, TP) across hundreds of lakes and their watersheds?}
+1\. Are more granular measures of Ag activity related to lake water quality (TN, TP) across hundreds of lakes and their watersheds?
 
 \vspace{1em}
 
-\textbf{2. Do relationships between watershed land use and lake water quality vary spatially among hydrologic and climatic regions?}
+2\. Do relationships between watershed land use and lake water quality vary spatially among hydrologic and climatic regions?
 
 <!-- [**Pictures?**] -->
 
@@ -114,17 +141,10 @@ What are some things we’ve learned from macroscale, aggregated-data studies?
 
 <!-- \alert{with high Ag land-use cover} -->
 
-\begin{columns}
-  \begin{column}[T]{0.5\textwidth}
-    \includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png}
-  \end{column}
-  \begin{column}{0.02\textwidth}
-  \end{column}
-  \begin{column}[T]{0.35\textwidth}
-    \vspace{2.5em}
-    \includegraphics[width=4cm]{../../JournalSubmissions/lagos_ag/figures/trophic_state-1.png}
-  \end{column}
-\end{columns}
+\includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png} \par
+\begin{center}
+\includegraphics[width=6cm]{../../JournalSubmissions/lagos_ag/figures/trophic_state-1.png}
+\end{center}
 
 ## Methods - Regression Modelling
 \footnotesize
@@ -134,6 +154,8 @@ What are some things we’ve learned from macroscale, aggregated-data studies?
 \small
 \textbf{Model type:} \hspace{29pt} Hierarchical Bayesian\\ ~ \\ \textbf{Predictands:} \hspace{25pt} TP, TN \\ ~ \\ \textbf{Global predictors:} 12 Granular Ag variables\\ \hspace{111pt} 3 Lake and watershed characteristics \\ ~ \\ \textbf{Variable selection:} None (\emph{horseshoe} shrinkage) \\ ~ \\ \textbf{Regional predictors:} 7 Watershed land-use variables \\ ~ \\ \textbf{Model selection:} Cross-validation on watershed land-use
 \end{textblock}
+
+\tiny [@carvalhoHorseshoeEstimatorSparse2010] \footnotesize
 
 <!-- \textblockcolour{colorlgray} -->
 <!-- \begin{textblock}{12}(1,6) -->
@@ -244,6 +266,11 @@ TN: Buffer Ag land has a strong(er) leverage on predicted values.
 \includegraphics[height=5.5cm]{../../JournalSubmissions/lagos_ag/figures/fe-1.png}
 \end{figure}
 
+<!-- ## Results - Regionally varying effects -->
+<!-- \footnotesize -->
+
+<!-- [**Model selection**] -->
+
 ## Results - Regionally varying effects
 \footnotesize
 
@@ -292,7 +319,7 @@ Ag sensitive regions have lower soil clay content and higher N deposition rates.
 
 \textbf{1. Are more granular measures of Ag activity related to lake water quality (TN, TP) across hundreds of lakes and their watersheds?}
 
-> Yes, both lake TP and lake TN were related to granular measures of Ag activity.
+> \alert{Yes}, both lake TP and lake TN were related to granular measures of Ag activity.
 
 > \raggedright But, specific crop land use and riparian buffer composition was more influential in the lake TN models.
 
@@ -300,7 +327,7 @@ Ag sensitive regions have lower soil clay content and higher N deposition rates.
 
 \textbf{2. Do relationships between Ag activities and lake water quality vary spatially among hydrologic and climatic regions?}
 
-> Yes, in the case of lake TN concentrations. 
+> \alert{Yes}, in the case of lake TN concentrations. 
 
 <!-- This variability may be related to differences in lake TP, atmospheric nitrogen deposition, or soil clay content. -->
 
