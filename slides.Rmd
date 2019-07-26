@@ -35,7 +35,7 @@ output:
         \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/proxy_key}} & Land-use cover - Specific crops, etc.
         \end{tabular}
 \item \begin{tabular}{cc}
-\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer composition - Land-use cover, specific crops
+\raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/buffer_key}} & Buffer configuration - Land-use cover, specific crops
 \end{tabular}
 \item \begin{tabular}{cc}
 \raisebox{-.5\height}{\includegraphics[width=0.08\paperwidth]{images/lake_key}} & Lake characteristics - Depth, area, etc.
@@ -112,13 +112,19 @@ output:
 <!-- \alert{Watershed land-use summaries are spatially coarse}  -->
  <!-- measures that may mask underlying relationships. -->
 
-\vspace{-1.5em}
+\vspace{-3.5em}
 
-<!-- \draw [step=1.0,blue, very thick] (-4,-4) grid (2,2); -->
   \begin{tikzpicture}[remember picture, overlay]
-  \node[rotate=90] at (-0.5,-3.3) {\footnotesize \alert{Poorly Buffered}};
+  \node[rotate=90] at (-0.5,-3.3) {\footnotesize \alert{Poorly Buffered Stream}};
   \draw[decoration={brace,mirror,raise=5pt,amplitude=0.2cm},decorate,line width=0.4mm]
-  (0.3,-2.6) -- (0.3,-4);
+  (0.1,-2.6) -- (0.1,-4);
+  \end{tikzpicture}
+  
+  <!-- \draw [step=1.0,blue, very thick] (7,-4) grid (11,-2); -->
+  \begin{tikzpicture}[remember picture, overlay]
+  \node[rotate=270] at (11.5,-3.9) {\footnotesize \alert{Well Buffered Stream}};
+  \draw[decoration={brace,raise=5pt,amplitude=0.2cm},decorate,line width=0.4mm]
+  (10.9,-2.6) -- (10.9,-5.2);
   \end{tikzpicture}
 
   \begin{figure}
@@ -136,15 +142,20 @@ output:
 
 <!-- [**Pictures?**] -->
 
-## Methods - 500 lake catchments
+## Methods 
 \small
 
 <!-- \alert{with high Ag land-use cover} -->
 
-\includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png} \par
-\begin{center}
-\includegraphics[width=6cm]{../../JournalSubmissions/lagos_ag/figures/trophic_state-1.png}
-\end{center}
+\includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png} 
+
+Land-use cover data (CDL) \tiny (USDA-NASS) \footnotesize
+
+Soils data (gSSURGO) \tiny (USDA-NRCS) \footnotesize
+
+Fertilizer and manure data (USGS) \tiny [@ruddy2006county] \footnotesize
+
+Lake nutrient data (LAGOSNE) \tiny [@sorannoLAGOSNEMultiscaledGeospatial2017] \footnotesize
 
 ## Methods - Regression Modelling
 \footnotesize
@@ -152,7 +163,7 @@ output:
 \textblockcolour{colorlgray}
 \begin{textblock}{12}(1,2)
 \small
-\textbf{Model type:} \hspace{29pt} Hierarchical Bayesian\\ ~ \\ \textbf{Predictands:} \hspace{25pt} TP, TN \\ ~ \\ \textbf{Global predictors:} 12 Granular Ag variables\\ \hspace{111pt} 3 Lake and watershed characteristics \\ ~ \\ \textbf{Variable selection:} None (\emph{horseshoe} shrinkage) \\ ~ \\ \textbf{Regional predictors:} 7 Watershed land-use variables \\ ~ \\ \textbf{Model selection:} Cross-validation on watershed land-use
+\textbf{Model type:} \hspace{29pt} Hierarchical Bayesian\\ ~ \\ \textbf{Response variables:} \hspace{0pt} TP, TN \\ ~ \\ \textbf{Global predictors:} 12 Granular Ag variables\\ \hspace{111pt} 3 Lake and watershed characteristics \\ ~ \\ \textbf{Variable selection:} None (\emph{horseshoe} shrinkage) \\ ~ \\ \textbf{Regional predictors:} 7 Watershed land-use variables \\ ~ \\ \textbf{Model selection:} Cross-validation on watershed land-use
 \end{textblock}
 
 \tiny [@carvalhoHorseshoeEstimatorSparse2010] \footnotesize
@@ -297,6 +308,8 @@ Ag sensitive regions have lower soil clay content and higher N deposition rates.
 \column{5.5cm}
   \includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_compare-1.png}
 \end{columns}
+
+<!-- Clay has slower OM decomp and higher erossivity -->
   
 <!-- ## Discussion -->
 <!-- \footnotesize -->
@@ -321,7 +334,7 @@ Ag sensitive regions have lower soil clay content and higher N deposition rates.
 
 > \alert{Yes}, both lake TP and lake TN were related to granular measures of Ag activity.
 
-> \raggedright But, specific crop land use and riparian buffer composition was more influential in the lake TN models.
+> \raggedright But, specific crop land use and riparian buffer configuration was more influential in the lake TN models.
 
 \vspace{-0.5em}
 
