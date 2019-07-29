@@ -143,7 +143,7 @@ output:
 <!-- [**Pictures?**] -->
 
 ## Methods 
-\small
+\footnotesize
 
 <!-- \alert{with high Ag land-use cover} -->
 
@@ -163,7 +163,7 @@ Lake nutrient data (LAGOSNE) \tiny [@sorannoLAGOSNEMultiscaledGeospatial2017] \f
 \textblockcolour{colorlgray}
 \begin{textblock}{12}(1,2)
 \small
-\textbf{Model type:} \hspace{29pt} Hierarchical Bayesian\\ ~ \\ \textbf{Response variables:} \hspace{0pt} TP, TN \\ ~ \\ \textbf{Global predictors:} 12 Granular Ag variables\\ \hspace{111pt} 3 Lake and watershed characteristics \\ ~ \\ \textbf{Variable selection:} None (\emph{horseshoe} shrinkage) \\ ~ \\ \textbf{Regional predictors:} 7 Watershed land-use variables \\ ~ \\ \textbf{Model selection:} Cross-validation on watershed land-use
+\textbf{Model type:} \hspace{48pt} Hierarchical Bayesian\\ ~ \\ \textbf{Response variables:} \hspace{0pt} TP, TN \\ ~ \\ \textbf{Global predictors:} \hspace{10pt} 12 Granular Ag variables\\ \hspace{121pt} 3 Lake and watershed characteristics \\ ~ \\ \textbf{Variable selection:} None (\emph{horseshoe} shrinkage) \\ ~ \\ \textbf{Regionally varying predictors:} 7 Wtrshd land-use vars \\ ~ \\ \textbf{Model selection:} Cross-validation on watershed land-use
 \end{textblock}
 
 \tiny [@carvalhoHorseshoeEstimatorSparse2010] \footnotesize
@@ -263,18 +263,19 @@ Lake nutrient data (LAGOSNE) \tiny [@sorannoLAGOSNEMultiscaledGeospatial2017] \f
 
 <!-- Modelling justification from Collins XXXX as well as Filstrup 2018. -->
 
-## Results - Fixed effects
+## Results - Global effects
 \footnotesize
 
-TP: Baseflow and Max depth have high leverage on predicted values.
+<!-- TP: Baseflow and Max depth have high leverage on predicted values. -->
+
 <!-- Fixed effect coefficients were markedly different among predictor categories. -->
 <!-- # Note how different in magnitude baseflow and max depth are from the others. 
 A one sd change in either will have a large effect on the fitted value -->
 
-TN: Buffer Ag land has a strong(er) leverage on predicted values.
+<!-- TN: Buffer Ag land has a strong(er) leverage on predicted values. -->
 
 \begin{figure}
-\includegraphics[height=5.5cm]{../../JournalSubmissions/lagos_ag/figures/fe-1.png}
+\includegraphics[height=7cm]{../../JournalSubmissions/lagos_ag/figures/fe-1.png}
 \end{figure}
 
 <!-- ## Results - Regionally varying effects -->
@@ -285,27 +286,28 @@ TN: Buffer Ag land has a strong(er) leverage on predicted values.
 ## Results - Regionally varying effects
 \footnotesize
 
-TP: No evidence for regional variation in Ag slope
+<!-- TP: No evidence for regional variation in Ag slope -->
 
-TN: Evidence for regional variation in corn slope
+<!-- TN: Evidence for regional variation in corn slope -->
 
 \vspace{0.5em}
 
 \begin{figure}
-\includegraphics[height=5.3cm]{../../JournalSubmissions/lagos_ag/figures/re-1.png}
+\includegraphics[height=7cm]{../../JournalSubmissions/lagos_ag/figures/re-1.png}
 \end{figure}
 
 ## Results - TN Model
 \small
 
-Ag sensitive regions have lower soil clay content and higher N deposition rates.
+<!-- Ag sensitive regions have lower soil clay content and higher N deposition rates. -->
 
-\vspace{2em}
+\vspace{1.5em}
 
 \begin{columns}
 \column{5.5cm}
-  \includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_hu4-1.png}
+  \includegraphics[width=6cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_hu4-1.png}
 \column{5.5cm}
+\vspace{3em}
   \includegraphics[width=5.5cm]{../../JournalSubmissions/lagos_ag/figures/tn_re_compare-1.png}
 \end{columns}
 
@@ -382,7 +384,8 @@ Ag sensitive regions have lower soil clay content and higher N deposition rates.
 
 ____
 
-____
+[**Say implications w photo**]
+
 
 ## References
 
