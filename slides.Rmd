@@ -183,12 +183,40 @@ Lake nutrient data (LAGOSNE) \tiny [@sorannoLAGOSNEMultiscaledGeospatial2017] \f
 
 <!-- Evaluate spatial variation in the relationships between lake nutrients and Ag proxies. -->
 
-<!-- ### Assumption 2 -->
-
 \begin{figure}
     \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/02_hierarchical_demo-1.png}
   \end{figure}
+
+## Results - Nutrient correlations
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node[opacity=1] at (5,-0.5) {\includegraphics[width=0.85\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-2}};
+\end{tikzpicture}
+
+## Results - Nutrient correlations
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node[opacity=1] at (5,-0.5) {\includegraphics[width=0.85\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-3}};
+\end{tikzpicture}
+
+## Results - Nutrient correlations
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node[opacity=1] at (5,-0.5) {\includegraphics[width=0.85\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-4}};
+\end{tikzpicture}
+
+## Results - Nutrient correlations
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node[opacity=1] at (5,-0.5) {\includegraphics[width=0.85\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-5}};
+\end{tikzpicture}
   
+## Results - Nutrient correlations
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node[opacity=1] at (5,-0.5) {\includegraphics[width=0.85\paperwidth]{../../JournalSubmissions/lagos_ag/figures/dotplot-6}};
+\end{tikzpicture}  
+
 ## Results - Nutrient correlations
 
 \begin{tikzpicture}[remember picture, overlay]
@@ -296,6 +324,19 @@ A one sd change in either will have a large effect on the fitted value -->
 \includegraphics[height=7cm]{../../JournalSubmissions/lagos_ag/figures/re-1.png}
 \end{figure}
 
+## Results - Regionally varying effects
+\footnotesize
+
+<!-- TP: No evidence for regional variation in Ag slope -->
+
+<!-- TN: Evidence for regional variation in corn slope -->
+
+\vspace{0.5em}
+
+\begin{figure}
+\includegraphics[height=7cm]{../../JournalSubmissions/lagos_ag/figures/re-2.png}
+\end{figure}
+
 ## Results - TN Model
 \small
 
@@ -384,8 +425,8 @@ A one sd change in either will have a large effect on the fitted value -->
 
 ____
 
-[**Say implications w photo**]
-
+\tikz[overlay,remember picture] \node[opacity=0.8, at=(current page.center)]{%
+  \includegraphics[width=\paperwidth]{images/crops}};
 
 ## References
 
