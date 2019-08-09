@@ -89,10 +89,11 @@ output:
   \color{black} 
   \pgfsetarrowsstart{latex}
   \pgfsetlinewidth{1ex}
-  \pgfpathmoveto{\pgfpoint{7.3cm}{0cm}}
-  \pgfpathlineto{\pgfpoint{2.5cm}{0cm}}
+  \pgfpathmoveto{\pgfpoint{7.8cm}{0cm}}
+  \pgfpathlineto{\pgfpoint{2.7cm}{0cm}}
   \pgfusepath{stroke}
-  \node at (5.1,-0.8) {\textbf{Granularity}};
+  \node at (1.8,-0.8) {\textbf{Aggregated}};
+  \node at (8.5,-0.75) {\textbf{Granular}};
 \end{tikzpicture}
 
 <!-- \node at (1,0) [ -->
@@ -117,7 +118,7 @@ output:
   \begin{tikzpicture}[remember picture, overlay]
   \node[rotate=90] at (-0.5,-3.3) {\footnotesize \alert{Poorly Buffered Stream}};
   \draw[decoration={brace,mirror,raise=5pt,amplitude=0.2cm},decorate,line width=0.4mm]
-  (0.1,-2.6) -- (0.1,-4);
+  (0.1,-2.6) -- (0.1,-4.5);
   \end{tikzpicture}
   
   <!-- \draw [step=1.0,blue, very thick] (7,-4) grid (11,-2); -->
@@ -142,20 +143,21 @@ output:
 
 <!-- [**Pictures?**] -->
 
-## Methods 
+## Methods - Data 
 \footnotesize
 
 <!-- \alert{with high Ag land-use cover} -->
 
 \includegraphics[width=11cm]{../../JournalSubmissions/lagos_ag/figures/11_map-1.png} 
+\vspace{0.5em}
+
+Lake nutrient data (LAGOSNE) \tiny [@sorannoLAGOSNEMultiscaledGeospatial2017] \footnotesize
 
 Land-use cover data (CDL) \tiny (USDA-NASS) \footnotesize
 
 Soils data (gSSURGO) \tiny (USDA-NRCS) \footnotesize
 
 Fertilizer and manure data (USGS) \tiny [@ruddy2006county] \footnotesize
-
-Lake nutrient data (LAGOSNE) \tiny [@sorannoLAGOSNEMultiscaledGeospatial2017] \footnotesize
 
 ## Methods - Regression Modelling
 \footnotesize
@@ -290,6 +292,13 @@ Lake nutrient data (LAGOSNE) \tiny [@sorannoLAGOSNEMultiscaledGeospatial2017] \f
 <!-- Which variables were assigned to each category? -->
 
 <!-- Modelling justification from Collins XXXX as well as Filstrup 2018. -->
+
+## Results - Global effects
+\footnotesize
+
+\begin{figure}
+\includegraphics[height=7cm]{../../JournalSubmissions/lagos_ag/figures/fe-1_blocked_top.png}
+\end{figure}
 
 ## Results - Global effects
 \footnotesize
