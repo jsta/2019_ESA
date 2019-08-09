@@ -179,7 +179,9 @@ Fertilizer and manure data (USGS) \tiny [@ruddy2006county] \footnotesize
 ## Methods - Regression modelling
 \small
 
-\alert{Watershed land use as a regionally varying predictor.} \par \vspace{-1em}\tiny[@burcherLANDCOVERCASCADERELATIONSHIPS2007]\small
+Watershed land-use as a proxy for unmeasured variables \tiny[@burcherLANDCOVERCASCADERELATIONSHIPS2007;@hayesClimateLandUse2015; @kingSPATIALCONSIDERATIONSLINKING2005]\small
+
+<!-- \alert{Watershed land use as a regionally varying predictor.}  -->
 
 <!-- WS land use is a proxy for unmeasured Ag activities -->
 
